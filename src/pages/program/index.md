@@ -1,8 +1,7 @@
 ---
-templateKey: 'product-page'
-path: /program
+templateKey: product-page
 title: Our Program
-image: /img/jumbotron.jpg
+image: /img/hackathon.jpg
 heading: What we offer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -99,3 +98,4 @@ pricing:
       plan: Custom
       price: '??'
 ---
+
