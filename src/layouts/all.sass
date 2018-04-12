@@ -1,11 +1,22 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono')
 
 // Config vars
-$kaldi-red: #FD461E
-$kaldi-red-invert: #fff
+$codaisseur-red: #D32F2F
+$codaisseur-red-invert: #fff
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+$primary: $codaisseur-red
+$primary-invert: $codaisseur-red-invert
+$red: $codaisseur-red
+
+$family-sans-serif: 'Roboto', sans-serif
+$family-monospace: 'Roboto Mono', monospace
+
+h1, h2, h3
+  font-family: $family-monospace
+
+.section.no-padding
+  padding: 0 0 0 0
 
 .content .taglist
   list-style: none
@@ -30,8 +41,10 @@ $primary-invert: $kaldi-red-invert
   left: 50%
   right: 50%
   margin: 5em -50vw
+  background-color: #000
   background-size: cover
-  background-position: bottom
+  background-position: 50% 50%
+  // background-blend-mode: overlay
   display: flex
   justify-content: center
   align-items: center

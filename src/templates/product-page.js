@@ -15,21 +15,21 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <section className="section section--gradient">
+  <section className="section section--gradient no-padding">
     <div className="container">
-      <div className="section">
+      <div className="section no-padding">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="content">
               <div
                 className="full-width-image-container margin-top-0"
-                style={{ backgroundImage: `url(${image})` }}
+                style={{ backgroundImage: `linear-gradient(to top,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%),url(${image})` }}
               >
                 <h2
                   className="has-text-weight-bold is-size-1"
                   style={{
-                    boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                    backgroundColor: '#f40',
+                    boxShadow: '0.5rem 0 0 #D32F2F, -0.5rem 0 0 #D32F2F',
+                    backgroundColor: '#D32F2F',
                     color: 'white',
                     padding: '1rem',
                   }}

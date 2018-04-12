@@ -1,8 +1,8 @@
 ---
 templateKey: 'product-page'
-path: /products
-title: Our Coffee
-image: /img/jumbotron.jpg
+path: /
+title: Codaisseur Design Academy
+image: /img/hackathon.jpg
 heading: What we offer
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
