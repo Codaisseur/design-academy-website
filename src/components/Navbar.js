@@ -22,7 +22,7 @@ const Navbar = () => (
       </div>
       <div className="navbar-end">
         <div className="navbar-item">
-          <a className="button is-danger">ENROLL NOW</a>
+          <a className="button is-primary">ENROLL NOW</a>
         </div>
       </div>
     </div>

@@ -83,3 +83,12 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     })
   }
 }
+
+exports.modifyWebpackConfig = ({ config, stage }) => {
+  config.resolve.extensions = ['.js', '.json']
+
+  config.removeLoader('json').loader('json', {
+    test: /\.json$/,
+    loader: 'json-loader'
+  });
+};

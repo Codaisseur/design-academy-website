@@ -3,11 +3,17 @@ import PropTypes from 'prop-types'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
+import { MarkdownContent } from '../components/Content'
+import './product-page.sass'
 
 export const ProductPageTemplate = ({
   image,
   title,
   heading,
+  hero1,
+  cta1,
+  hero2,
+  cta2,
   description,
   intro,
   main,
@@ -23,19 +29,40 @@ export const ProductPageTemplate = ({
             <div className="content">
               <div
                 className="full-width-image-container margin-top-0"
-                style={{ backgroundImage: `linear-gradient(to top,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%),url(${image})` }}
+                style={{ backgroundImage: `linear-gradient(to top,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.3) 100%),url(${image})` }}
               >
-                <h2
-                  className="has-text-weight-bold is-size-1"
-                  style={{
-                    boxShadow: '0.5rem 0 0 #D32F2F, -0.5rem 0 0 #D32F2F',
-                    backgroundColor: '#D32F2F',
-                    color: 'white',
-                    padding: '1rem',
-                  }}
-                >
-                  {title}
-                </h2>
+                <div className="column is-6">
+                  <h2
+                    className="has-text-weight-bold"
+                    style={{
+                      color: 'white',
+                      padding: '1rem',
+                      fontSize: 66
+                    }}
+                  >
+                    {title}
+                  </h2>
+                  <div className="columns">
+                    <div className="column">
+                      <MarkdownContent
+                        className="heroline is-size-4"
+                        content={hero1}
+                      />
+                      <a className="hero-cta button is-primary">
+                        {cta1}
+                      </a>
+                    </div>
+                    <div className="column">
+                      <MarkdownContent
+                        className="heroline is-size-4"
+                        content={hero2}
+                      />
+                      <a className="hero-cta button">
+                        {cta2}
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className="columns">
                 <div className="column is-7">
@@ -108,6 +135,10 @@ export const ProductPageTemplate = ({
 ProductPageTemplate.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
+  hero1: PropTypes.string,
+  cta1: PropTypes.string,
+  hero2: PropTypes.string,
+  cta2: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
@@ -137,6 +168,10 @@ const ProductPage = ({ data }) => {
       image={frontmatter.image}
       title={frontmatter.title}
       heading={frontmatter.heading}
+      hero1={frontmatter.hero1}
+      cta1={frontmatter.cta1}
+      hero2={frontmatter.hero2}
+      cta2={frontmatter.cta2}
       description={frontmatter.description}
       intro={frontmatter.intro}
       main={frontmatter.main}
@@ -164,6 +199,10 @@ export const productPageQuery = graphql`
         title
         image
         heading
+        hero1
+        cta1
+        hero2
+        cta2
         description
         intro {
           blurbs {

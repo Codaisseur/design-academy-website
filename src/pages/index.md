@@ -1,7 +1,17 @@
 ---
 templateKey: 'product-page'
 path: /
-title: Codaisseur Design Academy
+title: the Design Academy like no other
+hero1: |
+  Learn modern UX/UI Design
+
+  Become a professional in tech
+cta1: Learn Design
+hero2: |
+  Hire UX professionals
+
+  Get a UX/UI/PM/PO
+cta2: Hire Designers
 image: /img/hackathon.jpg
 heading: What we offer
 description: >-
