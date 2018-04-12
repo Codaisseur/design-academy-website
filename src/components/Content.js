@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown'
 export const HTMLContent = ({ content, className, style }) => (
   <div
     className={className}
-    style={Object.extend({}, style || {})}
+    style={Object.assign({}, style || {})}
     dangerouslySetInnerHTML={{ __html: content }}
   />
 )
