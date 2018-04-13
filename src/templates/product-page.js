@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
+import Link from 'gatsby-link'
 import { MarkdownContent } from '../components/Content'
 import './product-page.sass'
 
@@ -10,10 +11,7 @@ export const ProductPageTemplate = ({
   image,
   title,
   heading,
-  hero1,
-  cta1,
-  hero2,
-  cta2,
+  hero,
   description,
   intro,
   main,
@@ -33,35 +31,38 @@ export const ProductPageTemplate = ({
               >
                 <div className="column is-6">
                   <h2
-                    className="has-text-weight-bold"
+                    className="has-text-weight-bold is-size-1"
                     style={{
                       color: 'white',
-                      padding: '1rem',
-                      fontSize: 66
+                      padding: '1rem'
                     }}
                   >
                     {title}
                   </h2>
-                  <div className="columns">
-                    <div className="column">
-                      <MarkdownContent
+                  {hero && <div className="columns">
+                    {(hero.left || hero.right) && <div className="column is-narrow">
+                      {hero.left.text && <MarkdownContent
                         className="heroline is-size-4"
-                        content={hero1}
-                      />
-                      <a className="hero-cta button is-primary">
-                        {cta1}
-                      </a>
-                    </div>
-                    <div className="column">
-                      <MarkdownContent
+                        content={hero.left.text}
+                      />}
+                      {hero.left.link && hero.left.cta &&
+                        <Link className="hero-cta button is-primary" to={hero.left.link}>
+                          {hero.left.cta}
+                        </Link>
+                      }
+                    </div>}
+                    {hero.right && <div className="column is-narrow">
+                      {hero.right.text && <MarkdownContent
                         className="heroline is-size-4"
-                        content={hero2}
-                      />
-                      <a className="hero-cta button">
-                        {cta2}
-                      </a>
-                    </div>
-                  </div>
+                        content={hero.right.text}
+                      />}
+                      {hero.right.link && hero.right.cta &&
+                        <Link className="hero-cta button" to={hero.right.link}>
+                          {hero.right.cta}
+                        </Link>
+                      }
+                    </div>}
+                  </div>}
                 </div>
               </div>
               <div className="columns">
@@ -135,10 +136,18 @@ export const ProductPageTemplate = ({
 ProductPageTemplate.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
-  hero1: PropTypes.string,
-  cta1: PropTypes.string,
-  hero2: PropTypes.string,
-  cta2: PropTypes.string,
+  hero: PropTypes.shape({
+    left: PropTypes.shape({
+      text: PropTypes.string,
+      cta: PropTypes.string,
+      link: PropTypes.string,
+    }),
+    right: PropTypes.shape({
+      text: PropTypes.string,
+      cta: PropTypes.string,
+      link: PropTypes.string,
+    }),
+  }),
   heading: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
@@ -168,10 +177,7 @@ const ProductPage = ({ data }) => {
       image={frontmatter.image}
       title={frontmatter.title}
       heading={frontmatter.heading}
-      hero1={frontmatter.hero1}
-      cta1={frontmatter.cta1}
-      hero2={frontmatter.hero2}
-      cta2={frontmatter.cta2}
+      hero={frontmatter.hero}
       description={frontmatter.description}
       intro={frontmatter.intro}
       main={frontmatter.main}
@@ -199,10 +205,18 @@ export const productPageQuery = graphql`
         title
         image
         heading
-        hero1
-        cta1
-        hero2
-        cta2
+        hero {
+          left {
+            text
+            cta
+            link
+          }
+          right {
+            text
+            cta
+            link
+          }
+        }
         description
         intro {
           blurbs {

@@ -2,16 +2,21 @@
 templateKey: 'product-page'
 path: /
 title: the Design Academy like no other
-hero1: |
-  Learn modern UX/UI Design
+hero:
+  left:
+    text: |
+      Learn modern UX/UI Design
 
-  Become a professional in tech
-cta1: Learn Design
-hero2: |
-  Hire UX professionals
+      Become a professional in tech
+    cta: Learn Design
+    link: /learn
+  right:
+    text: |
+      Hire UX professionals
 
-  Get a UX/UI/PM/PO
-cta2: Hire Designers
+      Get a UX/UI/PM/PO
+    cta: Hire Designers
+    link: /hire
 image: /img/hackathon.jpg
 heading: What we offer
 description: >-
