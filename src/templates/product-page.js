@@ -25,46 +25,46 @@ export const ProductPageTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="content">
-              <div
-                className="full-width-image-container margin-top-0"
+              <section
+                className="hero is-large is-dark full-width-image-container margin-top-0"
                 style={{ backgroundImage: `linear-gradient(to top,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.3) 100%),url(${image})` }}
               >
-                <div className="column is-6">
-                  <h2
-                    className="has-text-weight-bold is-size-1"
-                    style={{
-                      color: 'white',
-                      padding: '1rem'
-                    }}
-                  >
-                    {title}
-                  </h2>
-                  {hero && <div className="columns">
-                    {(hero.left || hero.right) && <div className="column is-narrow">
-                      {hero.left.text && <MarkdownContent
-                        className="heroline is-size-4"
-                        content={hero.left.text}
-                      />}
-                      {hero.left.link && hero.left.cta &&
-                        <Link className="hero-cta button is-primary" to={hero.left.link}>
-                          {hero.left.cta}
-                        </Link>
-                      }
+                <div className="hero-body">
+                  <div className="container">
+                    <div className="columns">
+                      <div className="column is-8">
+                        <h1 className="title" style={{ fontSize: 66 }}>
+                          {title}
+                        </h1>
+                      </div>
+                    </div>
+                    {hero && <div className="columns">
+                      {(hero.left || hero.right) && <div className="column is-narrow">
+                        {hero.left.text && <MarkdownContent
+                          className="subtitle heroline is-size-4"
+                          content={hero.left.text}
+                        />}
+                        {hero.left.link && hero.left.cta &&
+                          <Link className="hero-cta button is-primary" to={hero.left.link}>
+                            {hero.left.cta}
+                          </Link>
+                        }
+                      </div>}
+                      {hero.right && <div className="column is-narrow">
+                        {hero.right.text && <MarkdownContent
+                          className="subtitle heroline is-size-4"
+                          content={hero.right.text}
+                        />}
+                        {hero.right.link && hero.right.cta &&
+                          <Link className="hero-cta button" to={hero.right.link}>
+                            {hero.right.cta}
+                          </Link>
+                        }
+                      </div>}
                     </div>}
-                    {hero.right && <div className="column is-narrow">
-                      {hero.right.text && <MarkdownContent
-                        className="heroline is-size-4"
-                        content={hero.right.text}
-                      />}
-                      {hero.right.link && hero.right.cta &&
-                        <Link className="hero-cta button" to={hero.right.link}>
-                          {hero.right.cta}
-                        </Link>
-                      }
-                    </div>}
-                  </div>}
+                  </div>
                 </div>
-              </div>
+              </section>
               <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-2">
