@@ -35,10 +35,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
           - {label: Title, name: title, widget: string}
-          - {label: "Hero Text Left", name: "hero1", widget: "markdown"}
-          - {label: "CTA Text Left", name: "cta1", widget: "string"}
-          - {label: "Hero Text Right", name: "hero2", widget: "markdown"}
-          - {label: "CTA Text Right", name: "cta2", widget: "string"}
+          - {label: Hero, name: hero, widget: object, fields: [{label: Left, name: left, widget: object, fields: [{label: Text, name: text, widget: markdown}, {label: CTA, name: cta, widget: string}, {label: Link, name: link, widget: relation, collection: pages, searchFields: ['path', 'title'], valueField: 'path'}]},{label: Right, name: right, widget: object, fields: [{label: Text, name: text, widget: markdown}, {label: CTA, name: cta, widget: string}, {label: Link, name: link, widget: relation, collection: pages, searchFields: ['path', 'title'], valueField: 'path'}]}]}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
