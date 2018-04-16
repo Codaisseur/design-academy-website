@@ -4,13 +4,16 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import Link from 'gatsby-link'
-import { MarkdownContent } from '../components/Content'
+import { MarkdownContent, ContentBlock } from '../components/Content'
+import BigTitle from '../components/BigTitle'
+import Helmet from 'react-helmet'
 import './product-page.sass'
 
 export const ProductPageTemplate = ({
   image,
   title,
   heading,
+  subheading,
   hero,
   description,
   intro,
@@ -20,6 +23,9 @@ export const ProductPageTemplate = ({
   pricing,
 }) => (
   <section className="section section--gradient no-padding">
+    <Helmet title={heading}>
+      <meta name="description" content={subheading} />
+    </Helmet>
     <div className="container">
       <div className="section no-padding">
         <div className="columns">
@@ -65,56 +71,28 @@ export const ProductPageTemplate = ({
                   </div>
                 </div>
               </section>
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
+              <ContentBlock
+                title={heading}
+                subtitle={subheading}
+                content={description}
+              />
+              <section style={{margin: '4rem 0'}}>
+                <BigTitle content="What Makes Codaisseur Unique?" />
+                <Features gridItems={intro.blurbs} />
+              </section>
+              <section className="intro has-text-centered" style={{margin: '0 0 4rem'}}>
+                <Link className="button is-primary" to={intro.link}>
+                  {intro.cta}
+                </Link>
+              </section>
+              <section style={{margin: '4rem 0'}}>
+                <BigTitle content="Our Simple Payment Plan" />
+                <progress class="progress is-primary is-large" value="800" max="9920">Admission Fee</progress>
+                <div className="price-labels columns is-mobile" style={{margin: '1rem 0'}}>
+                  <div className="admission-fee-label column is-5">€800 Admission Fee</div>
+                  <div className="tuition-fee-label column has-text-right">€9120 Paid by Your Future Employer</div>
                 </div>
-              </div>
-              <Features gridItems={intro.blurbs} />
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-3">
-                    {main.heading}
-                  </h3>
-                  <p>{main.description}</p>
-                </div>
-              </div>
-              <div className="tile is-ancestor">
-                <div className="tile is-vertical">
-                  <div className="tile">
-                    <div className="tile is-parent is-vertical">
-                      <article className="tile is-child">
-                        <img
-                          style={{ borderRadius: '5px' }}
-                          src={main.image1.image}
-                          alt={main.image1.alt}
-                        />
-                      </article>
-                    </div>
-                    <div className="tile is-parent">
-                      <article className="tile is-child">
-                        <img
-                          style={{ borderRadius: '5px' }}
-                          src={main.image2.image}
-                          alt={main.image2.alt}
-                        />
-                      </article>
-                    </div>
-                  </div>
-                  <div className="tile is-parent">
-                    <article className="tile is-child">
-                      <img
-                        style={{ borderRadius: '5px' }}
-                        src={main.image3.image}
-                        alt={main.image3.alt}
-                      />
-                    </article>
-                  </div>
-                </div>
-              </div>
+              </section>
               <Testimonials testimonials={testimonials} />
               <div
                 className="full-width-image-container"
@@ -149,9 +127,12 @@ ProductPageTemplate.propTypes = {
     }),
   }),
   heading: PropTypes.string,
+  subheading: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
+    cta: PropTypes.string,
+    link: PropTypes.string,
   }),
   main: PropTypes.shape({
     heading: PropTypes.string,
@@ -177,6 +158,7 @@ const ProductPage = ({ data }) => {
       image={frontmatter.image}
       title={frontmatter.title}
       heading={frontmatter.heading}
+      subheading={frontmatter.subheading}
       hero={frontmatter.hero}
       description={frontmatter.description}
       intro={frontmatter.intro}
@@ -205,6 +187,7 @@ export const productPageQuery = graphql`
         title
         image
         heading
+        subheading
         hero {
           left {
             text
@@ -220,11 +203,14 @@ export const productPageQuery = graphql`
         description
         intro {
           blurbs {
+            title
             image
             text
           }
           heading
           description
+          cta
+          link
         }
         main {
           heading

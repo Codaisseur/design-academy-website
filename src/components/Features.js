@@ -3,14 +3,17 @@ import PropTypes from 'prop-types'
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
-    {gridItems.map(item => (
-      <div key={item.image} className="column is-6">
-        <section className="section">
-          <p className="has-text-centered">
+    {gridItems.map((item, index) => (
+      <div key={index} className="column is-half-tablet" style={{flexGrow: 2}}>
+        <article className="tile is-parent">
+          <p className="tile is-child has-text-centered is-4" style={{padding: 24}}>
             <img alt="" src={item.image} />
           </p>
-          <p>{item.text}</p>
-        </section>
+          <section className="tile is-child">
+            <h3>{item.title}</h3>
+            {item.text}
+          </section>
+        </article>
       </div>
     ))}
   </div>
