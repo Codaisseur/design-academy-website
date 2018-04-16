@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Codaisseur Design & UX Academy',
+    siteUrl: `https://design.codaisseur.com`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    { resolve: 'gatsby-plugin-sitemap' },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-filesystem',
