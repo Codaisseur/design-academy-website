@@ -1,9 +1,14 @@
 const events = require('./events');
 const partners = require('./partners');
+const testimonials = require('./testimonials');
 
 module.exports = async (opts) => {
   console.log('\nFetching Codaisseur data...')
-  return await Promise.all([events(opts), partners(opts)])
+  return await Promise.all([
+    events(opts),
+    partners(opts),
+    testimonials(opts)
+  ])
     .then(_ => console.log('Done fetching Codaisseur data.'))
     .catch(err => {
       console.log('\nError');

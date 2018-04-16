@@ -1,8 +1,10 @@
 import React from 'react'
 import './BigTitle.sass'
 
-export default ({ content }) => (
+export default ({ content, subtitle }) => (
   <header className="big-title has-text-centered">
-    <h1 className="has-text-weight-semibold">{content}</h1>
+    <h1 className="has-text-weight-semibold">{content}
+      {subtitle && <span className="subtitle">{subtitle}</span>}
+    </h1>
   </header>
 )

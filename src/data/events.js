@@ -16,7 +16,7 @@ module.exports = async ({ boundActionCreators }) => {
               {},
               event,
               {
-                id: event.id.toString(),
+                id: `event-${event.id.toString()}`,
                 parent: null,
                 children: [],
                 internal: {

@@ -7,23 +7,23 @@ module.exports = async ({ boundActionCreators }) => {
   const { createNode } = boundActionCreators;
   return new Promise((resolve, reject) => {
     request
-      .get(`${API_URL}/partners`)
+      .get(`${API_URL}/student_testimonials`)
       .then(res => {
-        console.log('Fetched', res.body.partners.length, 'partners')
-        res.body.partners.forEach(partner => {
+        console.log('Fetched', res.body.student_testimonials.length, 'student_testimonials')
+        res.body.student_testimonials.forEach(testimonial => {
           createNode(
             Object.assign(
               {},
-              partner,
+              testimonial,
               {
-                id: `partner-${partner.id.toString()}`,
+                id: `testimonial-${testimonial.id.toString()}`,
                 parent: null,
                 children: [],
                 internal: {
-                  type: `Partner`,
+                  type: `StudentTestimonial`,
                   contentDigest: crypto
                     .createHash(`md5`)
-                    .update(JSON.stringify(partner))
+                    .update(JSON.stringify(testimonial))
                     .digest(`hex`),
                 }
               }

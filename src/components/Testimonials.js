@@ -1,16 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import BigTitle from './BigTitle'
+import shuffle from '../lib/shuffle'
 
 const Testimonials = ({ testimonials }) => (
   <div>
     <BigTitle content="Testimonials" />
-    {testimonials.map((testimonial, index) => (
+    {shuffle(testimonials).slice(0,5).map((testimonial, index) => (
       <article key={index} className="message">
-        <div className="message-body">
-          {testimonial.quote}
-          <br />
-          <cite> – {testimonial.author}</cite>
+        <div className="message-body columns is-mobile">
+          <div className="column is-one-fifth-desktop is-one-quarter-mobile">
+            <figure className="image is-square" >
+              <img src={testimonial.picture_url} alt={testimonial.name} />
+            </figure>
+          </div>
+          <div className="column">
+            {testimonial.testimonial}
+            <br />
+            <cite> – {testimonial.name}</cite>
+          </div>
         </div>
       </article>
     ))}
@@ -20,8 +28,9 @@ const Testimonials = ({ testimonials }) => (
 Testimonials.propTypes = {
   testimonials: PropTypes.arrayOf(
     PropTypes.shape({
-      quote: PropTypes.string,
-      author: PropTypes.string,
+      testimonial: PropTypes.string,
+      name: PropTypes.string,
+      picture_url: PropTypes.string
     })
   ),
 }

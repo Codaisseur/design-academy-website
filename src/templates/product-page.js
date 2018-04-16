@@ -7,6 +7,7 @@ import Link from 'gatsby-link'
 import { MarkdownContent, ContentBlock } from '../components/Content'
 import BigTitle from '../components/BigTitle'
 import Helmet from 'react-helmet'
+import FullMapComponent from '../components/FullMapComponent'
 import './product-page.sass'
 
 export const ProductPageTemplate = ({
@@ -127,6 +128,11 @@ export const ProductPageTemplate = ({
                 </div>
               </section>
               <Testimonials testimonials={testimonials} />
+              <BigTitle
+                content="Come Visit Us"
+                subtitle="Burgerweeshuispad 201, 1076 GR Amsterdam The Netherlands"
+              />
+              <FullMapComponent />
               <div
                 className="full-width-image-container"
                 style={{ backgroundImage: `url(${fullImage})` }}
@@ -196,10 +202,10 @@ const ProductPage = ({ data }) => {
       description={frontmatter.description}
       intro={frontmatter.intro}
       main={frontmatter.main}
-      testimonials={frontmatter.testimonials}
       fullImage={frontmatter.full_image}
       pricing={frontmatter.pricing}
       partners={data.allPartner.edges.map(p => p.node)}
+      testimonials={data.allStudentTestimonial.edges.map(t => t.node)}
     />
   )
 }
@@ -223,6 +229,16 @@ export const productPageQuery = graphql`
           name
           website
           logo
+        }
+      }
+    }
+    allStudentTestimonial {
+      edges {
+        node {
+          id
+          name
+          testimonial
+          picture_url
         }
       }
     }
