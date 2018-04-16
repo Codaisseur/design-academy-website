@@ -8,6 +8,7 @@ import { MarkdownContent, ContentBlock } from '../components/Content'
 import BigTitle from '../components/BigTitle'
 import Helmet from 'react-helmet'
 import FullMapComponent from '../components/FullMapComponent'
+import StartDates from '../components/StartDates'
 import './product-page.sass'
 
 export const ProductPageTemplate = ({
@@ -18,11 +19,12 @@ export const ProductPageTemplate = ({
   hero,
   description,
   intro,
-  main,
   testimonials,
-  fullImage,
-  pricing,
-  partners
+  partners,
+  startdates,
+  open_evenings,
+  courseinfo,
+  jobinfo,
 }) => (
   <section className="section section--gradient no-padding">
     <Helmet title={heading}>
@@ -106,7 +108,7 @@ export const ProductPageTemplate = ({
                       companies and startups in Europe.
                     </p>
                     <p className="subtitle">
-                      <Link className="button is-primary" to="/enroll" style={{ marginTop: '1rem'}}>
+                      <Link className="button is-primary" to="/apply" style={{ marginTop: '1rem'}}>
                         Apply Now
                       </Link>
                     </p>
@@ -128,20 +130,50 @@ export const ProductPageTemplate = ({
                 </div>
               </section>
               <Testimonials testimonials={testimonials} />
+
+              <StartDates
+                title="Start Dates"
+                subtitle="During the 10 week course you will learn everything you need to know to become a professional UX designer"
+                cta="Apply Now"
+                startdates={startdates.map(s => Object.assign({}, s, { link: '/apply' }))} />
+
               <BigTitle
                 content="Come Visit Us"
                 subtitle="Burgerweeshuispad 201, 1076 GR Amsterdam The Netherlands"
               />
               <FullMapComponent />
-              <div
-                className="full-width-image-container"
-                style={{ backgroundImage: `url(${fullImage})` }}
-              />
-              <h2 className="has-text-weight-semibold is-size-2">
-                {pricing.heading}
-              </h2>
-              <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
+
+              <section className="columns is-multiline">
+                {courseinfo.map((info, index) => (
+                  <ContentBlock
+                    key={index}
+                    style={{ flexGrow: 2 }}
+                    className="column is-6"
+                    title={info.heading}
+                    subtitle={info.subheading}
+                    content={info.description}
+                  />
+                ))}
+              </section>
+
+              <StartDates
+                title="Open Evenings"
+                subtitle="It will be the chance to ask all your questions"
+                cta="RSVP"
+                startdates={open_evenings.map(s => ({ startsAt: s.starts_at, link: s.event_url }))} />
+
+              <section className="columns is-multiline">
+                {jobinfo.map((info, index) => (
+                  <ContentBlock
+                    key={index}
+                    style={{ flexGrow: 2 }}
+                    className="column is-6"
+                    title={info.heading}
+                    subtitle={info.subheading}
+                    content={info.description}
+                  />
+                ))}
+              </section>
             </div>
           </div>
         </div>
@@ -173,20 +205,11 @@ ProductPageTemplate.propTypes = {
     cta: PropTypes.string,
     link: PropTypes.string,
   }),
-  main: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    image1: PropTypes.object,
-    image2: PropTypes.object,
-    image3: PropTypes.object,
-  }),
   testimonials: PropTypes.array,
-  fullImage: PropTypes.string,
-  pricing: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    plans: PropTypes.array,
-  }),
+  startdates: PropTypes.array,
+  open_evenings: PropTypes.array,
+  courseinfo: PropTypes.array,
+  jobinfo: PropTypes.array,
 }
 
 const ProductPage = ({ data }) => {
@@ -201,11 +224,14 @@ const ProductPage = ({ data }) => {
       hero={frontmatter.hero}
       description={frontmatter.description}
       intro={frontmatter.intro}
-      main={frontmatter.main}
-      fullImage={frontmatter.full_image}
-      pricing={frontmatter.pricing}
+      startdates={frontmatter.startdates}
+      courseinfo={frontmatter.courseinfo}
+      jobinfo={frontmatter.jobinfo}
       partners={data.allPartner.edges.map(p => p.node)}
       testimonials={data.allStudentTestimonial.edges.map(t => t.node)}
+      open_evenings={data.allOpenEvening.edges.map(t => t.node)}
+      courseinfo={frontmatter.courseinfo}
+      jobinfo={frontmatter.jobinfo}
     />
   )
 }
@@ -242,6 +268,16 @@ export const productPageQuery = graphql`
         }
       }
     }
+    allOpenEvening {
+      edges {
+        node {
+          id
+          starts_at
+          ends_at
+          event_url
+        }
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
@@ -272,36 +308,20 @@ export const productPageQuery = graphql`
           cta
           link
         }
-        main {
-          heading
-          description
-          image1 {
-            alt
-            image
-          }
-          image2 {
-            alt
-            image
-          }
-          image3 {
-            alt
-            image
-          }
+        startdates {
+          startsAt
+          endsAt
+          full
         }
-        testimonials {
-          author
-          quote
-        }
-        full_image
-        pricing {
+        courseinfo {
           heading
+          subheading
           description
-          plans {
-            description
-            items
-            plan
-            price
-          }
+        }
+        jobinfo {
+          heading
+          subheading
+          description
         }
       }
     }

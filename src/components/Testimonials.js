@@ -5,7 +5,7 @@ import shuffle from '../lib/shuffle'
 
 const Testimonials = ({ testimonials }) => (
   <div>
-    <BigTitle content="Testimonials" />
+    <BigTitle content="Testimonials" subtitle="From our Code Academy" />
     {shuffle(testimonials).slice(0,5).map((testimonial, index) => (
       <article key={index} className="message">
         <div className="message-body columns is-mobile">

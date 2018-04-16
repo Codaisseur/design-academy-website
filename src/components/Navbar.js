@@ -22,7 +22,7 @@ const Navbar = () => (
       </div>
       <div className="navbar-end">
         <div className="navbar-item">
-          <Link to="/enroll" className="button is-primary" >ENROLL NOW</Link>
+          <Link to="/apply" className="button is-primary" >APPLY NOW</Link>
         </div>
       </div>
     </div>
