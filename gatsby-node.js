@@ -1,6 +1,7 @@
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const data = require('./src/data')
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
@@ -92,3 +93,5 @@ exports.modifyWebpackConfig = ({ config, stage }) => {
     loader: 'json-loader'
   });
 };
+
+exports.sourceNodes = data

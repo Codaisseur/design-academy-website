@@ -22,7 +22,8 @@
     "react": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-markdown": "^3.3.0",
-    "remark-parse": "^5.0.0"
+    "remark-parse": "^5.0.0",
+    "superagent": "^3.8.2"
   },
   "keywords": [
     "gatsby"

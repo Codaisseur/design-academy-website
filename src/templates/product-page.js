@@ -21,6 +21,7 @@ export const ProductPageTemplate = ({
   testimonials,
   fullImage,
   pricing,
+  partners
 }) => (
   <section className="section section--gradient no-padding">
     <Helmet title={heading}>
@@ -39,7 +40,7 @@ export const ProductPageTemplate = ({
                   <div className="container">
                     <div className="columns">
                       <div className="column is-8">
-                        <h1 className="title" style={{ fontSize: 66 }}>
+                        <h1 className="title main-title" style={{ fontSize: 66 }}>
                           {title}
                         </h1>
                       </div>
@@ -76,7 +77,7 @@ export const ProductPageTemplate = ({
                 subtitle={subheading}
                 content={description}
               />
-              <section style={{margin: '4rem 0'}}>
+              <section style={{margin: '6rem 0'}}>
                 <BigTitle content="What Makes Codaisseur Unique?" />
                 <Features gridItems={intro.blurbs} />
               </section>
@@ -85,12 +86,44 @@ export const ProductPageTemplate = ({
                   {intro.cta}
                 </Link>
               </section>
-              <section style={{margin: '4rem 0'}}>
+              <section style={{margin: '6rem 0'}}>
                 <BigTitle content="Our Simple Payment Plan" />
-                <progress class="progress is-primary is-large" value="800" max="9920">Admission Fee</progress>
+                <progress style={{margin: '2rem 0 .5rem'}} className="progress is-primary is-large" value="800" max="9920">Admission Fee</progress>
                 <div className="price-labels columns is-mobile" style={{margin: '1rem 0'}}>
                   <div className="admission-fee-label column is-5">€800 Admission Fee</div>
                   <div className="tuition-fee-label column has-text-right">€9120 Paid by Your Future Employer</div>
+                </div>
+              </section>
+              <section className="hero is-medium is-dark full-width-image-container"
+                style={{ backgroundImage: `linear-gradient(to top,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.3) 100%),url(${image})`, marginTop: '6rem'}}>
+                <div className="hero-body has-text-centered">
+                  <div className="container">
+                    <p className="title">
+                      Since 2016, Codaisseur trained over
+                      100 best-in-class graduates
+                      currently working in top
+                      companies and startups in Europe.
+                    </p>
+                    <p className="subtitle">
+                      <Link className="button is-primary" to="/enroll" style={{ marginTop: '1rem'}}>
+                        Apply Now
+                      </Link>
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <section style={{margin: '6rem 0'}}>
+                <BigTitle content="Our Partners" />
+                <div className="columns is-mobile is-multiline">
+                  {partners.map((p,i) => (
+                    <div key={i} className="column is-one-fifth-desktop is-one-third-mobile is-one-quarter-tablet">
+                      <figure className="image is-square" style={{margin: 0}}>
+                        <a href={`${p.website}?utm_source=Codaisseur&utm_medium=homepage`}>
+                          <img alt={p.name} src={p.logo} />
+                        </a>
+                      </figure>
+                    </div>
+                  ))}
                 </div>
               </section>
               <Testimonials testimonials={testimonials} />
@@ -166,6 +199,7 @@ const ProductPage = ({ data }) => {
       testimonials={frontmatter.testimonials}
       fullImage={frontmatter.full_image}
       pricing={frontmatter.pricing}
+      partners={data.allPartner.edges.map(p => p.node)}
     />
   )
 }
@@ -182,6 +216,16 @@ export default ProductPage
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
+    allPartner {
+      edges {
+        node {
+          id
+          name
+          website
+          logo
+        }
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
