@@ -164,9 +164,8 @@ export const ProductPageTemplate = ({
 
               {jobinfo && <section className="columns is-multiline">
                 {jobinfo.map((info, index) => (
-                  <div className="column is-6" style={{ flexGrow: 2 }}>
+                  <div key={index} className="column is-6" style={{ flexGrow: 2 }}>
                     <ContentBlock
-                      key={index}
                       title={info.heading}
                       subtitle={info.subheading}
                       content={info.description}

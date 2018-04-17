@@ -3,7 +3,7 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-map
 import PropTypes from 'prop-types'
 import mapStyles from './FullMapComponentStyle.json'
 
-const API_KEY='AIzaSyApDNJyrkLxv1C43W_qFm_CmCs1JBysjKQ'
+const API_KEY='AIzaSyAT04wd58rVEvFzV5i0eCq2PO2jyoRcnhQ'
 
 const FullMapComponent = withScriptjs(withGoogleMap(
   class extends Component {
