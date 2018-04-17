@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
 import PropTypes from 'prop-types'
-import mapStyles from './fullMapComponentStyle.json'
+import mapStyles from './FullMapComponentStyle.json'
 
 const API_KEY='AIzaSyApDNJyrkLxv1C43W_qFm_CmCs1JBysjKQ'
 
