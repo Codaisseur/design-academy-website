@@ -23,7 +23,7 @@ module.exports = async ({ boundActionCreators }) => {
                   type: `OpenEvening`,
                   contentDigest: crypto
                     .createHash(`md5`)
-                    .update(JSON.stringify(open_evening))
+                    .update(`open_evening-${open_evening.id.toString()}`)
                     .digest(`hex`),
                 }
               }

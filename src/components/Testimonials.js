@@ -1,16 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import BigTitle from './BigTitle'
-import shuffle from '../lib/shuffle'
 
 const Testimonials = ({ testimonials }) => (
-  <div>
+  <section className="testimonials">
     <BigTitle content="Testimonials" subtitle="From our Code Academy" />
-    {shuffle(testimonials).slice(0,5).map((testimonial, index) => (
+    {testimonials.map((testimonial, index) => (
       <article key={index} className="message">
         <div className="message-body columns is-mobile">
           <div className="column is-one-fifth-desktop is-one-quarter-mobile">
-            <figure className="image is-square" >
+            <figure className="image is-square" style={{margin: 0}}>
               <img src={testimonial.picture_url} alt={testimonial.name} />
             </figure>
           </div>
@@ -22,7 +21,7 @@ const Testimonials = ({ testimonials }) => (
         </div>
       </article>
     ))}
-  </div>
+  </section>
 )
 
 Testimonials.propTypes = {

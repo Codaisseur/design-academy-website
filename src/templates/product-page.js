@@ -228,7 +228,7 @@ const ProductPage = ({ data }) => {
       courseinfo={frontmatter.courseinfo}
       jobinfo={frontmatter.jobinfo}
       partners={data.allPartner.edges.map(p => p.node)}
-      testimonials={data.allStudentTestimonial.edges.map(t => t.node)}
+      testimonials={data.allStudentTestimonial.edges.map(t => t.node).slice(0,5)}
       open_evenings={data.allOpenEvening.edges.map(t => t.node)}
       courseinfo={frontmatter.courseinfo}
       jobinfo={frontmatter.jobinfo}
@@ -258,7 +258,7 @@ export const productPageQuery = graphql`
         }
       }
     }
-    allStudentTestimonial {
+    allStudentTestimonial(limit: 5) {
       edges {
         node {
           id

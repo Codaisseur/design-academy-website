@@ -23,7 +23,7 @@ module.exports = async ({ boundActionCreators }) => {
                   type: `Event`,
                   contentDigest: crypto
                     .createHash(`md5`)
-                    .update(JSON.stringify(event))
+                    .update(`event-${event.id.toString()}`)
                     .digest(`hex`),
                 }
               }

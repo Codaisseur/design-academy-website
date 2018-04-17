@@ -1,6 +1,6 @@
 const request = require('superagent');
 const crypto = require('crypto');
-
+const shuffle = require('../lib/shuffle');
 const API_URL = 'https://codaisseur.com/api';
 
 module.exports = async ({ boundActionCreators }) => {
@@ -10,7 +10,7 @@ module.exports = async ({ boundActionCreators }) => {
       .get(`${API_URL}/student_testimonials`)
       .then(res => {
         console.log('Fetched', res.body.student_testimonials.length, 'student_testimonials')
-        res.body.student_testimonials.forEach(testimonial => {
+        shuffle(res.body.student_testimonials).forEach(testimonial => {
           createNode(
             Object.assign(
               {},
@@ -23,7 +23,7 @@ module.exports = async ({ boundActionCreators }) => {
                   type: `StudentTestimonial`,
                   contentDigest: crypto
                     .createHash(`md5`)
-                    .update(JSON.stringify(testimonial))
+                    .update(`testimonial-${testimonial.id.toString()}`)
                     .digest(`hex`),
                 }
               }
