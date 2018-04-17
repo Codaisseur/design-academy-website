@@ -56,7 +56,7 @@ export const ProductPageTemplate = ({
                           content={hero.left.text}
                         />}
                         {hero.left.link && hero.left.cta &&
-                          <Link className="hero-cta button is-primary" to={hero.left.link}>
+                          <Link className="hero-cta button is-primary is-large" to={hero.left.link}>
                             {hero.left.cta}
                           </Link>
                         }
@@ -67,7 +67,7 @@ export const ProductPageTemplate = ({
                           content={hero.right.text}
                         />}
                         {hero.right.link && hero.right.cta &&
-                          <Link className="hero-cta button" to={hero.right.link}>
+                          <Link className="hero-cta button is-large" to={hero.right.link}>
                             {hero.right.cta}
                           </Link>
                         }
