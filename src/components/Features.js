@@ -10,8 +10,8 @@ const FeatureGrid = ({ gridItems }) => (
             <img alt="" src={item.image} />
           </p>
           <section className="tile is-child">
-            <h3>{item.title}</h3>
-            {item.text}
+            <h3>{item.heading}</h3>
+            {item.description}
           </section>
         </article>
       </div>
@@ -23,7 +23,8 @@ FeatureGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string,
-      text: PropTypes.string,
+      heading: PropTypes.string,
+      description: PropTypes.string,
     })
   ),
 }

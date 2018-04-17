@@ -25,6 +25,7 @@ export const ProductPageTemplate = ({
   open_evenings,
   courseinfo,
   jobinfo,
+  program,
 }) => (
   <section className="section section--gradient no-padding">
     <Helmet title={heading}>
@@ -80,12 +81,16 @@ export const ProductPageTemplate = ({
                 subtitle={subheading}
                 content={description}
               />
-              <section style={{margin: '6rem 0'}}>
-                <BigTitle content="What Makes Codaisseur Unique?" />
+              <section id="intro" style={{margin: '6rem 0'}}>
+                <ContentBlock
+                  title={intro.heading}
+                  subtitle={intro.subheading}
+                  content={intro.description}
+                />
                 <Features gridItems={intro.blurbs} />
               </section>
               <section className="intro has-text-centered" style={{margin: '0 0 4rem'}}>
-                <Link className="button is-primary" to={intro.link}>
+                <Link className="button is-primary is-large" to={intro.link}>
                   {intro.cta}
                 </Link>
               </section>
@@ -173,6 +178,16 @@ export const ProductPageTemplate = ({
                   </div>
                 ))}
               </section>}
+
+              <section id="program" style={{margin: '6rem 0'}}>
+                <BigTitle content={program.heading} />
+                <Features gridItems={program.blurbs} />
+              </section>
+              <section className="intro has-text-centered" style={{margin: '0 0 4rem'}}>
+                <Link className="button is-primary is-large" to={program.link}>
+                  {program.cta}
+                </Link>
+              </section>
             </div>
           </div>
         </div>
@@ -200,6 +215,15 @@ ProductPageTemplate.propTypes = {
   subheading: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
+    heading: PropTypes.string,
+    subheading: PropTypes.string,
+    blurbs: PropTypes.array,
+    cta: PropTypes.string,
+    link: PropTypes.string,
+  }),
+  program: PropTypes.shape({
+    heading: PropTypes.string,
+    subheading: PropTypes.string,
     blurbs: PropTypes.array,
     cta: PropTypes.string,
     link: PropTypes.string,
@@ -223,6 +247,7 @@ const ProductPage = ({ data }) => {
       hero={frontmatter.hero}
       description={frontmatter.description}
       intro={frontmatter.intro}
+      program={frontmatter.program}
       startdates={frontmatter.startdates}
       courseinfo={frontmatter.courseinfo}
       jobinfo={frontmatter.jobinfo}
@@ -298,11 +323,12 @@ export const productPageQuery = graphql`
         description
         intro {
           blurbs {
-            title
+            heading
             image
-            text
+            description
           }
           heading
+          subheading
           description
           cta
           link
@@ -321,6 +347,16 @@ export const productPageQuery = graphql`
           heading
           subheading
           description
+        }
+        program {
+          blurbs {
+            heading
+            image
+            description
+          }
+          heading
+          cta
+          link
         }
       }
     }

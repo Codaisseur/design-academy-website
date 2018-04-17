@@ -6,14 +6,21 @@ const ProductPagePreview = ({ entry, getAsset }) => {
   const entryBlurbs = entry.getIn(['data', 'intro', 'blurbs'])
   const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
 
+
+  const entryProgramBlurbs = entry.getIn(['data', 'program', 'blurbs'])
+  const programBlurbs = entryProgramBlurbs ? entryProgramBlurbs.toJS() : []
+
   const entryStartDates = entry.getIn(['data', 'startdates'])
   const startdates = entryStartDates ? entryStartDates.toJS() : []
 
   const entryTestimonials = entry.getIn(['data', 'testimonials'])
   const testimonials = entryTestimonials ? entryTestimonials.toJS() : []
 
-  const entryPricingPlans = entry.getIn(['data', 'pricing', 'plans'])
-  const pricingPlans = entryPricingPlans ? entryPricingPlans.toJS() : []
+  const entryCourseInfos = entry.getIn(['data', 'courseinfo'])
+  const courseinfo = entryCourseInfos ? entryCourseInfos.toJS() : []
+
+  const entryJobInfos = entry.getIn(['data', 'courseinfo'])
+  const jobinfo = entryJobInfos ? entryJobInfos.toJS() : []
 
   return (
     <ProductPageTemplate
@@ -36,12 +43,21 @@ const ProductPagePreview = ({ entry, getAsset }) => {
       description={entry.getIn(['data', 'description'])}
       intro={{
         heading: entry.getIn(['data', 'intro', 'heading']),
+        subheading: entry.getIn(['data', 'intro', 'subheading']),
         description: entry.getIn(['data', 'intro', 'description']),
         cta: entry.getIn(['data', 'intro', 'cta']),
         link: entry.getIn(['data', 'intro', 'link']),
         blurbs
       }}
+      courseinfo={courseinfo}
       startdates={startdates}
+      jobinfo={jobinfo}
+      program={{
+        heading: entry.getIn(['data', 'program', 'heading']),
+        cta: entry.getIn(['data', 'program', 'cta']),
+        link: entry.getIn(['data', 'program', 'link']),
+        programBlurbs
+      }}
     />
   )
 }

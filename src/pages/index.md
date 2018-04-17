@@ -1,72 +1,68 @@
 ---
 templateKey: 'product-page'
 path: /
-title: the Design Academy like no other
+title: Become a UX Professional in 10 Weeks
 hero:
   left:
     text: |
-      Learn modern UX/UI Design
-
-      Become a professional in tech
+      Only Pay Tuition Fee Once You’re Hired
     cta: Learn Design
-    link: /learn
+    link: '#intro'
   right:
     text: |
-      Hire UX professionals
-
-      Get a UX/UI/PM/PO
-    cta: Hire Designers
-    link: /hire
+      Learn modern UX design
+    cta: Apply Now
+    link: https://codaisseur.typeform.com/to/njUnCH
 image: /img/hackathon.jpg
 heading: Your Kickstart into a New Design Career
 subheading: During the 10 week Academy, you will become a professional in design and product management.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
-intro:
-  blurbs:
-    - image: /img/coffee.png
-      title: Coffee
-      text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/coffee-gear.png
-      title: Tea
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
-      title: Fruit
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
-      title: Cake
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+  Our teachers have years of startup, corporate and side-project experience in everything design and product management. Our unique, hands-on approach to teaching helps you focus on getting the most out of these weeks possible.
 
-  heading: What we offer
+  You will have front row access to so much knowledge and experience, which makes this a truly unique kickstart into your new career
+intro:
+  heading: What Makes Codaisseur Unique?
+  subheading: A shared interest in each other and focus on preparing you for a career in design.
   description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    The Design Academy is a new concept of Codaisseur. Since 2016, we have been running
+    a very successful [Code Academy](https://codaisseur.com/learn) and we decided to
+    do the same thing for UX Design.
   cta: Read Full Program
-  link: /program
+  link: '#program'
+  blurbs:
+    - image: /img/job.png
+      heading: Job Guarantee
+      description: >
+        You will be hired as a junior UX Designer or researcher, Product
+        Manager/owner or UI/visual designer within 4 months of graduation.
+    - image: /img/curriculum.png
+      heading: Broad Curriculum
+      description: >
+        Learn all about User Research, User Interaction Design and Visual Design.
+        All that is needed to be an effective team member in a small or big
+        company.
+    - image: /img/nopay.png
+      heading: No Cure No Pay
+      description: >
+        We are accountable for your success. If you are not hired within 4
+        months, we bear your tuition fee.
+    - image: /img/selection.png
+      heading: Tough Selection Process
+      description: >
+        Students have to do a creative exercise and have two face to face
+        interviews before acceptance.
+    - image: /img/accesible.png
+      heading: Broadly Accessible
+      description: >
+        No previous technical or design experience is required to join the
+        academy. It doesn't matter which industry you studied or worked,
+        every experience is useful.
+    - image: /img/affordable.png
+      heading: Actually Affordable
+      description: >
+        You will always pay an €800 admission fee. Your (future) employer will
+        pay the tuition fee of €9120.
+
 startdates:
   - startsAt: 2018-05-28
     endsAt: 2018-07-03
@@ -80,29 +76,64 @@ courseinfo:
       We can make you this offer because we work closely with the companies that will hire you. Since there are already a lot of graduates that work for companies, and they also need designers.
 
       The company that hires you will pay us back the remainder of your education cost - but only if you get hired in a real paid job. You will work for these companies directly, and you will choose where you want (and don’t want) to work.
-  - heading: Admission Fee
-    subheading: We work hard to make this course affordable to anyone
+  - heading: Work together with coders
+    subheading: In close collaboration with the highly successful Codaisseur Code Academy
     description: |
-      We work hard to make this course affordable to anyone. The admission fee of €800 is the best value for money you will find anywhere in the world.
+      No online course or university with teach you to work closely with developers. The coding Academy runs in the same building, that means that most assignments, projects and sprints will be worked on together.
 
-      We can make you this offer because we work closely with the companies that will hire you. Since there are already a lot of graduates that work for companies, and they also need designers.
+      Working with developers and people with different skills set you up for success in any future company or with any project.
 
-      The company that hires you will pay us back the remainder of your education cost - but only if you get hired in a real paid job. You will work for these companies directly, and you will choose where you want (and don’t want) to work.
+      If you want to know more about the Code Academy, check out the full program below.
 jobinfo:
-  - heading: Admission Fee
-    subheading: We work hard to make this course affordable to anyone
+  - heading: 2-Year Acceleration Program
+    subheading: Codaisseur has your back!
     description: |
-      We work hard to make this course affordable to anyone. The admission fee of €800 is the best value for money you will find anywhere in the world.
+      Having completed the academy, you will be admitted into our 2-Year Junior Acceleration Program. The aim of this program is to provide you with further training, support, and mentorship so you can grow and expand your current skills in a more expedited manner.
 
-      We can make you this offer because we work closely with the companies that will hire you. Since there are already a lot of graduates that work for companies, and they also need designers.
-
-      The company that hires you will pay us back the remainder of your education cost - but only if you get hired in a real paid job. You will work for these companies directly, and you will choose where you want (and don’t want) to work.
-  - heading: Admission Fee
-    subheading: We work hard to make this course affordable to anyone
+      We achieve this through our advanced monthly classes, one-on-one mentoring hours, support via the Codaisseur community and ongoing access to all online course materials. Not only is this a benefit to our graduates, it has proven to be a valuable support outlet for the companies hiring our juniors.
+  - heading: Choose Your Own Job
+    subheading: Get hired by yourself, or with a developer on your side
     description: |
-      We work hard to make this course affordable to anyone. The admission fee of €800 is the best value for money you will find anywhere in the world.
+      It is in our best interest that all (code and design) graduates  find suitable employment as a junior UX professional after the academy; not only do we mean this but our very own model forces us to abide by it. Whilst we provide leads from our ever-growing network of companies, you are more than welcome to solicit directly with a company of their choosing.
 
-      We can make you this offer because we work closely with the companies that will hire you. Since there are already a lot of graduates that work for companies, and they also need designers.
-
-      The company that hires you will pay us back the remainder of your education cost - but only if you get hired in a real paid job. You will work for these companies directly, and you will choose where you want (and don’t want) to work.
+      We involve companies as much as possible throughout the academy to not only introduce but to make the transition easier and more streamlined for our graduates.
+program:
+  heading: How the day to day program looks
+  subheading: ' '
+  description: ' '
+  cta: Apply Now
+  link: https://codaisseur.typeform.com/to/njUnCH
+  blurbs:
+    - image: /img/job.png
+      heading: Job Guarantee
+      description: >
+        You will be hired as a junior UX Designer or researcher, Product
+        Manager/owner or UI/visual designer within 4 months of graduation.
+    - image: /img/curriculum.png
+      heading: Broad Curriculum
+      description: >
+        Learn all about User Research, User Interaction Design and Visual Design.
+        All that is needed to be an effective team member in a small or big
+        company.
+    - image: /img/nopay.png
+      heading: No Cure No Pay
+      description: >
+        We are accountable for your success. If you are not hired within 4
+        months, we bear your tuition fee.
+    - image: /img/selection.png
+      heading: Tough Selection Process
+      description: >
+        Students have to do a creative exercise and have two face to face
+        interviews before acceptance.
+    - image: /img/accesible.png
+      heading: Broadly Accessible
+      description: >
+        No previous technical or design experience is required to join the
+        academy. It doesn't matter which industry you studied or worked,
+        every experience is useful.
+    - image: /img/affordable.png
+      heading: Actually Affordable
+      description: >
+        You will always pay an €800 admission fee. Your (future) employer will
+        pay the tuition fee of €9120.
 ---
