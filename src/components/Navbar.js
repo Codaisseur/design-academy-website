@@ -19,7 +19,7 @@ const Navbar = () => (
       </div>
       <div className="navbar-end">
         <div className="navbar-item">
-          <Link to="/apply" className="button is-primary" >APPLY NOW</Link>
+          <Link to="https://codaisseur.typeform.com/to/njUnCH" className="button is-primary" >APPLY NOW</Link>
         </div>
       </div>
     </div>

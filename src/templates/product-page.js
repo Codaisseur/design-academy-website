@@ -108,7 +108,7 @@ export const ProductPageTemplate = ({
                       companies and startups in Europe.
                     </p>
                     <p className="subtitle">
-                      <Link className="button is-primary" to="/apply" style={{ marginTop: '1rem'}}>
+                      <Link className="button is-primary" to="https://codaisseur.typeform.com/to/njUnCH" style={{ marginTop: '1rem'}}>
                         Apply Now
                       </Link>
                     </p>
@@ -135,7 +135,7 @@ export const ProductPageTemplate = ({
                 title="Start Dates"
                 subtitle="During the 10 week course you will learn everything you need to know to become a professional UX designer"
                 cta="Apply Now"
-                startdates={startdates.map(s => Object.assign({}, s, { link: '/apply' }))} />}
+                startdates={startdates.map(s => Object.assign({}, s, { link: 'https://codaisseur.typeform.com/to/njUnCH' }))} />}
 
               <BigTitle
                 content="Come Visit Us"
