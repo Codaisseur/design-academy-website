@@ -108,9 +108,9 @@ export const ProductPageTemplate = ({
                       companies and startups in Europe.
                     </p>
                     <p className="subtitle">
-                      <Link className="button is-primary" to="https://codaisseur.typeform.com/to/njUnCH" style={{ marginTop: '1rem'}}>
+                      <a className="button is-primary" href="https://codaisseur.typeform.com/to/njUnCH" style={{ marginTop: '1rem'}}>
                         Apply Now
-                      </Link>
+                      </a>
                     </p>
                   </div>
                 </div>
