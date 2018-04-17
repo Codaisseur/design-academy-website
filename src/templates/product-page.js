@@ -89,7 +89,7 @@ export const ProductPageTemplate = ({
                   {intro.cta}
                 </Link>
               </section>
-              <section style={{margin: '6rem 0'}}>
+              <section style={{margin: '6rem 2rem'}}>
                 <BigTitle content="Our Simple Payment Plan" />
                 <progress style={{margin: '2rem 0 .5rem'}} className="progress is-primary is-large" value="800" max="9920">Admission Fee</progress>
                 <div className="price-labels columns is-mobile" style={{margin: '1rem 0'}}>
@@ -115,7 +115,7 @@ export const ProductPageTemplate = ({
                   </div>
                 </div>
               </section>
-              <section style={{margin: '6rem 0'}}>
+              <section style={{margin: '6rem 2rem'}}>
                 <BigTitle content="Our Partners" />
                 <div className="columns is-mobile is-multiline">
                   {partners.map((p,i) => (
@@ -164,14 +164,14 @@ export const ProductPageTemplate = ({
 
               <section className="columns is-multiline">
                 {jobinfo.map((info, index) => (
-                  <ContentBlock
-                    key={index}
-                    style={{ flexGrow: 2 }}
-                    className="column is-6"
-                    title={info.heading}
-                    subtitle={info.subheading}
-                    content={info.description}
-                  />
+                  <div className="column is-6" style={{ flexGrow: 2 }}>
+                    <ContentBlock
+                      key={index}
+                      title={info.heading}
+                      subtitle={info.subheading}
+                      content={info.description}
+                    />
+                  </div>
                 ))}
               </section>
             </div>

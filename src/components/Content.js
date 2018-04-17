@@ -28,13 +28,15 @@ export const ContentBlock = ({ title, subtitle, content, className, style }) => 
     className={`content-block ${className}`}
     style={Object.assign({}, style || {})}
   >
-    <h1
-      className="title is-2 has-text-centered has-text-weight-semibold"
-    >
-      {title}
-      {subtitle && <span className="subtitle">{subtitle}</span>}
-    </h1>
-    <MarkdownContent content={content} className="content" />
+    <div className="content">
+      <h1
+        className="title is-2 has-text-centered has-text-weight-semibold"
+      >
+        {title}
+        {subtitle && <span className="subtitle">{subtitle}</span>}
+      </h1>
+      <MarkdownContent content={content} className="content" />
+    </div>
   </section>
 )
 

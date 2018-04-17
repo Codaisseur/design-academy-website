@@ -6,13 +6,15 @@ import Link from 'gatsby-link'
 import moment from 'moment'
 
 const StartDates = ({ title, subtitle, startdates, cta }) => (
-  <div>
+  <section style={{margin: '6rem 2rem'}}>
     <BigTitle content={title} subtitle={subtitle} />
     <table className="table is-striped">
       <thead>
-        <th className="has-text-centered">Start Date</th>
-        {startdates[0].endsAt && <th className="has-text-centered">End Date</th>}
-        <th className="has-text-centered">Get Started</th>
+        <tr>
+          <th className="has-text-centered">Start Date</th>
+          {startdates[0].endsAt && <th className="has-text-centered">End Date</th>}
+          <th className="has-text-centered">Get Started</th>
+        </tr>
       </thead>
       <tbody>
         {startdates.map((startdate, index) => (
@@ -30,7 +32,7 @@ const StartDates = ({ title, subtitle, startdates, cta }) => (
         ))}
       </tbody>
     </table>
-  </div>
+  </section>
 )
 
 StartDates.propTypes = {

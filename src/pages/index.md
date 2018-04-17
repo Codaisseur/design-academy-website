@@ -80,7 +80,23 @@ courseinfo:
       We can make you this offer because we work closely with the companies that will hire you. Since there are already a lot of graduates that work for companies, and they also need designers.
 
       The company that hires you will pay us back the remainder of your education cost - but only if you get hired in a real paid job. You will work for these companies directly, and you will choose where you want (and don’t want) to work.
+  - heading: Admission Fee
+    subheading: We work hard to make this course affordable to anyone
+    description: |
+      We work hard to make this course affordable to anyone. The admission fee of €800 is the best value for money you will find anywhere in the world.
+
+      We can make you this offer because we work closely with the companies that will hire you. Since there are already a lot of graduates that work for companies, and they also need designers.
+
+      The company that hires you will pay us back the remainder of your education cost - but only if you get hired in a real paid job. You will work for these companies directly, and you will choose where you want (and don’t want) to work.
 jobinfo:
+  - heading: Admission Fee
+    subheading: We work hard to make this course affordable to anyone
+    description: |
+      We work hard to make this course affordable to anyone. The admission fee of €800 is the best value for money you will find anywhere in the world.
+
+      We can make you this offer because we work closely with the companies that will hire you. Since there are already a lot of graduates that work for companies, and they also need designers.
+
+      The company that hires you will pay us back the remainder of your education cost - but only if you get hired in a real paid job. You will work for these companies directly, and you will choose where you want (and don’t want) to work.
   - heading: Admission Fee
     subheading: We work hard to make this course affordable to anyone
     description: |
