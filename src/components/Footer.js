@@ -34,36 +34,35 @@ export default () => (
         </div>
         <div className="column">
           <div className="social-icons">
-            <strong className="socia-title">Follow Us</strong>
             <div className="icon-container">
               <a href="https://twitter.com/codaisseur" target="_blank">
                 <span className="fa-layers fa-fw fa-1x">
-                  <FontAwesomeIcon icon={CircleIcon} color="white" size="2x"/>
-                  <FontAwesomeIcon icon={TwitterIcon} color="#1a1a1a" style={{color: "#1a1a1a"}} inverse size="2x" transform="shrink-6" />
+                  <FontAwesomeIcon icon={CircleIcon} color="white" size="2x" fixedWidth />
+                  <FontAwesomeIcon icon={TwitterIcon} color="#1a1a1a" style={{color: "#1a1a1a"}} fixedWidth inverse size="2x" transform="shrink-6" />
                 </span>
               </a>
             </div>
             <div className="icon-container">
               <a href="https://www.facebook.com/codaisseur" target="_blank">
                 <span className="fa-layers fa-fw fa-1x">
-                  <FontAwesomeIcon icon={CircleIcon} color="white" size="2x"/>
-                  <FontAwesomeIcon icon={FacebookIcon} color="#1a1a1a" style={{color: "#1a1a1a"}} inverse size="2x" transform="shrink-6" />
+                  <FontAwesomeIcon icon={CircleIcon} color="white" size="2x" fixedWidth />
+                  <FontAwesomeIcon icon={FacebookIcon} color="#1a1a1a" style={{color: "#1a1a1a"}} fixedWidth inverse size="2x" transform="shrink-6" />
                 </span>
               </a>
             </div>
             <div className="icon-container">
               <a href="https://www.linkedin.com/company/development-bootcamp" target="_blank">
                 <span className="fa-layers fa-fw fa-1x">
-                  <FontAwesomeIcon icon={CircleIcon} color="white" size="2x"/>
-                  <FontAwesomeIcon icon={LinkedinIcon} color="#1a1a1a" style={{color: "#1a1a1a"}} inverse size="2x" transform="shrink-6" />
+                  <FontAwesomeIcon icon={CircleIcon} color="white" size="2x" fixedWidth />
+                  <FontAwesomeIcon icon={LinkedinIcon} color="#1a1a1a" style={{color: "#1a1a1a"}} fixedWidth inverse size="2x" transform="shrink-6" />
                 </span>
               </a>
             </div>
             <div className="icon-container">
               <a href="https://github.com/codaisseur" target="_blank">
                 <span className="fa-layers fa-fw fa-1x">
-                  <FontAwesomeIcon icon={CircleIcon} color="white" size="2x"/>
-                  <FontAwesomeIcon icon={GithubIcon} color="#1a1a1a" style={{color: "#1a1a1a"}} inverse size="2x" transform="shrink-6" />
+                  <FontAwesomeIcon icon={CircleIcon} color="white" size="2x" fixedWidth />
+                  <FontAwesomeIcon icon={GithubIcon} color="#1a1a1a" style={{color: "#1a1a1a"}} fixedWidth inverse size="2x" transform="shrink-6" />
                 </span>
               </a>
             </div>

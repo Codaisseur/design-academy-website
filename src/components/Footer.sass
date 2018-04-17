@@ -25,15 +25,23 @@
 
   .syndicates
     display: flex
-    flex-flow: row wrap
     align-items: center
     text-align: center
     align-content: space-between
 
     .syndicate
       flex: 1
-      margin: 1rem auto
+      display: flex
+      align-content: space-around
+      align-self: center
 
       figure
-        margin: auto
+        display: flex
+        flex: 1
+        align-items: center
+        max-width: 50px
         text-align: center
+        margin: auto
+
+        img
+          max-width: 50px
