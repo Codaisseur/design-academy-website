@@ -131,11 +131,11 @@ export const ProductPageTemplate = ({
               </section>
               <Testimonials testimonials={testimonials} />
 
-              <StartDates
+              {startdates && <StartDates
                 title="Start Dates"
                 subtitle="During the 10 week course you will learn everything you need to know to become a professional UX designer"
                 cta="Apply Now"
-                startdates={startdates.map(s => Object.assign({}, s, { link: '/apply' }))} />
+                startdates={startdates.map(s => Object.assign({}, s, { link: '/apply' }))} />}
 
               <BigTitle
                 content="Come Visit Us"
@@ -143,7 +143,7 @@ export const ProductPageTemplate = ({
               />
               <FullMapComponent />
 
-              <section className="columns is-multiline">
+              {courseinfo && <section className="columns is-multiline">
                 {courseinfo.map((info, index) => (
                   <ContentBlock
                     key={index}
@@ -154,15 +154,15 @@ export const ProductPageTemplate = ({
                     content={info.description}
                   />
                 ))}
-              </section>
+              </section>}
 
-              <StartDates
+              {open_evenings && <StartDates
                 title="Open Evenings"
                 subtitle="It will be the chance to ask all your questions"
                 cta="RSVP"
-                startdates={open_evenings.map(s => ({ startsAt: s.starts_at, link: s.event_url }))} />
+                startdates={open_evenings.map(s => ({ startsAt: s.starts_at, link: s.event_url }))} />}
 
-              <section className="columns is-multiline">
+              {jobinfo && <section className="columns is-multiline">
                 {jobinfo.map((info, index) => (
                   <div className="column is-6" style={{ flexGrow: 2 }}>
                     <ContentBlock
@@ -173,7 +173,7 @@ export const ProductPageTemplate = ({
                     />
                   </div>
                 ))}
-              </section>
+              </section>}
             </div>
           </div>
         </div>
