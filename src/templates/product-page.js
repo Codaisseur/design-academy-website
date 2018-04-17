@@ -90,9 +90,9 @@ export const ProductPageTemplate = ({
                 <Features gridItems={intro.blurbs} />
               </section>
               <section className="intro has-text-centered" style={{margin: '0 0 4rem'}}>
-                <Link className="button is-primary is-large" to={intro.link}>
+                <a className="button is-primary is-large" href={intro.link}>
                   {intro.cta}
-                </Link>
+                </a>
               </section>
               <section style={{margin: '6rem 2rem'}}>
                 <BigTitle content="Our Simple Payment Plan" />
@@ -184,9 +184,9 @@ export const ProductPageTemplate = ({
                 <Features gridItems={program.blurbs} />
               </section>
               <section className="intro has-text-centered" style={{margin: '0 0 4rem'}}>
-                <Link className="button is-primary is-large" to={program.link}>
+                <a className="button is-primary is-large" href={program.link}>
                   {program.cta}
-                </Link>
+                </a>
               </section>
             </div>
           </div>
