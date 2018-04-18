@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-title: Become a UX Professional in 10 Weeks
+title: Become a UX Professional in 1337 Weeks
 hero:
   left:
     cta: Learn Design
