@@ -133,41 +133,9 @@ jobinfo:
       only introduce but to make the transition easier and more streamlined for
       our graduates.
 program:
-  blurbs:
-    - image: /img/job.png
-      heading: Job Guarantee
-      description: >
-        You will be hired as a junior UX Designer or researcher, Product
-        Manager/owner or UI/visual designer within 4 months of graduation.
-    - image: /img/curriculum.png
-      heading: Broad Curriculum
-      description: >
-        Learn all about User Research, User Interaction Design and Visual
-        Design. All that is needed to be an effective team member in a small or
-        big company.
-    - image: /img/nopay.png
-      heading: No Cure No Pay
-      description: >
-        We are accountable for your success. If you are not hired within 4
-        months, we bear your tuition fee.
-    - image: /img/selection.png
-      heading: Tough Selection Process
-      description: >
-        Students have to do a creative exercise and have two face to face
-        interviews before acceptance.
-    - image: /img/accesible.png
-      heading: Broadly Accessible
-      description: >
-        No previous technical or design experience is required to join the
-        academy. It doesn't matter which industry you studied or worked, every
-        experience is useful.
-    - image: /img/affordable.png
-      heading: Actually Affordable
-      description: >
-        You will always pay an €800 admission fee. Your (future) employer will
-        pay the tuition fee of €9120.
+  blurbs: []
   cta: Apply Now
-  heading: How the day to day program looks
+  heading: ''
   link: 'https://codaisseur.typeform.com/to/njUnCH'
 ---
 
