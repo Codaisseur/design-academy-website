@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const FeatureGrid = ({ gridItems }) => (
+  (gridItems &&
   <div className="columns is-multiline">
     {gridItems.map((item, index) => (
       <div key={index} className="column is-half-tablet" style={{flexGrow: 2}}>
@@ -16,7 +17,7 @@ const FeatureGrid = ({ gridItems }) => (
         </article>
       </div>
     ))}
-  </div>
+  </div>) || null
 )
 
 FeatureGrid.propTypes = {
