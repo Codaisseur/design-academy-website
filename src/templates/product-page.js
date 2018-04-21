@@ -29,7 +29,17 @@ export const ProductPageTemplate = ({
 }) => (
   <section className="section section--gradient no-padding">
     <Helmet title={heading}>
+      <meta name="title" content="Codaisseur Design Academy" />
       <meta name="description" content={subheading} />
+      <meta property="og:title" content="Codaisseur Design Academy" />
+      <meta property="og:description" content={subheading} />
+      <meta property="og:image" content="https://design.codaisseur.com/img/codaisseur-design-academy-meta-image.png" />
+      <meta property="og:site_name" content="codaisseur.com" />
+      <meta name="twitter:description" content={subheading} />
+      <meta name="twitter:creator" content="@Codaisseur" />
+      <meta name="twitter:site" content="@Codaisseur" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image:src" content="https://design.codaisseur.com/img/codaisseur-design-academy-meta-image.png" />
     </Helmet>
     <div className="container">
       <div className="section no-padding">
