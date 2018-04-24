@@ -118,7 +118,7 @@ jobinfo:
       online course materials. Not only is this a benefit to our graduates, it
       has proven to be a valuable support outlet for the companies hiring our
       juniors.
-  - heading: Choose Your Own Job
+  - heading: Choose Your Own Job in your new career
     subheading: 'Get hired by yourself, or with a developer on your side'
     description: >
       It is in our best interest that all (code and design) graduates  find
