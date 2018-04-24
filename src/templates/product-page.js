@@ -359,11 +359,11 @@ export const productPageQuery = graphql`
           description
         }
         program {
-          # blurbs {
-          #   heading
-          #   image
-          #   description
-          # }
+          blurbs {
+            heading
+            image
+            description
+          }
           heading
           cta
           link
