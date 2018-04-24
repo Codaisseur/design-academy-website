@@ -140,25 +140,46 @@ program:
         You will be able to dissect user experiences; become confident about
         generating ideas and to ask the right questions about users.
     - image: /img/ui-design-week.png
-      heading: User Interaction Design Week
+      heading: 2. User Interaction Design Week
       description: >-
         You will be able to convert data and research into tactile user
         interfaces and able to cooperate on a project with multiple designers
     - image: /img/visual-design-week.png
-      heading: Visual Design Week
+      heading: 3. Visual Design Week
       description: >-
         You will learn to design emotional and desirable experience for users;
         leveraging text, colors, motion, icons and sound.
     - image: /img/week-of-collaboration-with-coders.png
-      heading: Week of collaboration with coders
+      heading: 4. Week of collaboration with coders
       description: >-
         You will learn to collaborate with makers with another skillset
         (coders/developers) and based on a specific client/colleague briefing
     - image: /img/prototyping-and-design-sprint.png
-      heading: Prototyping and design sprint week
+      heading: 5. Prototyping and design sprint week
       description: >-
         You will learn to improve the process of working with none technical
         people on your team and creating a safe space for a creative process 
+    - image: /img/creative-facilitation.png
+      heading: 6. Creative Facilitation Week
+      description: >-
+        You will learn to to push great validated ideas forward in your team and
+        organisation, becoming a design leader and process coach
+    - image: /img/project-week.png
+      heading: 7. Project week
+      description: >-
+        You will learn to design and ship a digital product based on research
+        and a validated prototype; together with developers and a real world
+        problem
+    - image: /img/individual-assignment-week.png
+      heading: 8. Individual Assignment week
+      description: >-
+        You will learn to leverage all your individual skills so you can
+        research, design and ship products on your own; this is your graduation
+        product
+    - heading: '9. Real World Projects, demo and graduation weeks'
+      description: >-
+        You will learn to work with a real client to design, build (with
+        coders), present (findings, process and learnings). 
   cta: Apply Now
   heading: What you will learn in the Academy
   link: 'https://codaisseur.typeform.com/to/njUnCH'
