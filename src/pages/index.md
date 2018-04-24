@@ -152,8 +152,13 @@ program:
     - image: /img/week-of-collaboration-with-coders.png
       heading: Week of collaboration with coders
       description: >-
-        You will learn to collaborate with people with another skillset
+        You will learn to collaborate with makers with another skillset
         (coders/developers) and based on a specific client/colleague briefing
+    - image: /img/prototyping-and-design-sprint.png
+      heading: Prototyping and design sprint week
+      description: >-
+        You will learn to improve the process of working with none technical
+        people on your team and creating a safe space for a creative process 
   cta: Apply Now
   heading: What you will learn in the Academy
   link: 'https://codaisseur.typeform.com/to/njUnCH'
