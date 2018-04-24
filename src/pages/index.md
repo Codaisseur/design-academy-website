@@ -133,9 +133,19 @@ jobinfo:
       only introduce but to make the transition easier and more streamlined for
       our graduates.
 program:
-  blurbs: []
+  blurbs:
+    - image: /img/ux-research-week.png
+      heading: 1. User Experience Research Week
+      description: >-
+        You will be able to dissect user experiences; become confident about
+        generating ideas and to ask the right questions about users.
+    - image: /img/ui-design-week.png
+      heading: User Interaction Design Week
+      description: >-
+        You will be able to convert data and research into tactile user
+        interfaces and able to cooperate on a project with multiple designers
   cta: Apply Now
-  heading: ''
+  heading: What you will learn in the Academy
   link: 'https://codaisseur.typeform.com/to/njUnCH'
 ---
 
