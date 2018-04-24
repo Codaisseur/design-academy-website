@@ -37,7 +37,7 @@ intro:
         Learn all about User Research, User Interaction Design and Visual
         Design. All that is needed to be an effective team member in a small or
         big company.
-    - image: /img/nopay.png
+    - image: /img/no-cure-no-pay.png
       heading: No Cure No Pay
       description: >
         We are accountable for your success. If you are not hired within 4
@@ -47,7 +47,7 @@ intro:
       description: >
         Students have to do a creative exercise and have two face to face
         interviews before acceptance.
-    - image: /img/accesible.png
+    - image: /img/broadly-accessible.png
       heading: Broadly Accessible
       description: >
         No previous technical or design experience is required to join the
