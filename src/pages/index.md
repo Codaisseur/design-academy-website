@@ -137,13 +137,13 @@ program:
     - image: /img/ux-research-week.png
       heading: 1. User Experience Research Week
       description: >-
-        You will be able to dissect user experiences; become confident about
+        You will learn to dissect user experiences; become confident about
         generating ideas and to ask the right questions about users.
     - image: /img/ui-design-week.png
       heading: 2. User Interaction Design Week
       description: >-
-        You will be able to convert data and research into tactile user
-        interfaces and able to cooperate on a project with multiple designers
+        You will learn to convert data and research into tactile user interfaces
+        and able to cooperate on a project with multiple designers
     - image: /img/visual-design-week.png
       heading: 3. Visual Design Week
       description: >-
@@ -152,7 +152,7 @@ program:
     - image: /img/week-of-collaboration-with-coders.png
       heading: 4. Week of collaboration with coders
       description: >-
-        You will learn to collaborate with makers with another skillset
+        You will experience collaborating with makers with another skillset
         (coders/developers) and based on a specific client/colleague briefing
     - image: /img/prototyping-and-design-sprint.png
       heading: 5. Prototyping and design sprint week
@@ -167,19 +167,27 @@ program:
     - image: /img/project-week.png
       heading: 7. Project week
       description: >-
-        You will learn to design and ship a digital product based on research
-        and a validated prototype; together with developers and a real world
-        problem
+        You will experience designing and shipping a digital product based on
+        research and a validated prototype; together with developers and a real
+        world problem
     - image: /img/individual-assignment-week.png
       heading: 8. Individual Assignment week
       description: >-
-        You will learn to leverage all your individual skills so you can
+        You will experience to leverage all your individual skills so you can
         research, design and ship products on your own; this is your graduation
         product
-    - heading: '9. Real World Projects, demo and graduation weeks'
+    - image: /img/real-world-project-weeks.png
+      heading: '9. Real World Projects, demo and graduation weeks'
       description: >-
-        You will learn to work with a real client to design, build (with
-        coders), present (findings, process and learnings). 
+        You will experience working with a real client to design, building (with
+        coders), presenting (findings, process and learnings) in an iterative
+        process where you manage expectations.
+    - image: /img/demo-and-graduation-week.png
+      heading: 10. Demo and graduation week
+      description: >-
+        The last week you will demo your Real World Project to our partners and
+        employers and actually ship (Product Hunt) your product and get
+        feedback; you are then graduated from the academy.
   cta: Apply Now
   heading: What you will learn in the Academy
   link: 'https://codaisseur.typeform.com/to/njUnCH'
