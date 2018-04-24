@@ -26,7 +26,7 @@ description: >-
   makes this a truly unique kickstart into your new career
 intro:
   blurbs:
-    - image: /img/job.png
+    - image: /img/job-guarantee.png
       heading: Job Guarantee
       description: >
         You will be hired as a junior UX Designer or researcher, Product
