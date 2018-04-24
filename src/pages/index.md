@@ -45,8 +45,8 @@ intro:
     - image: /img/selection.png
       heading: Tough Selection Process
       description: >
-        Students have to do a creative exercise and have two face to face
-        interviews before acceptance.
+        Students have to do a creative exercise, attend an open evening (dates
+        are below) and have two face to face interviews before acceptance.
     - image: /img/broadly-accessible.png
       heading: Broadly Accessible
       description: >
@@ -177,7 +177,7 @@ program:
         research, design and ship products on your own; this is your graduation
         product
     - image: /img/real-world-project-weeks.png
-      heading: '9. Real World Projects, demo and graduation weeks'
+      heading: 9. Real World Projects
       description: >-
         You will experience working with a real client to design, building (with
         coders), presenting (findings, process and learnings) in an iterative
@@ -189,7 +189,7 @@ program:
         employers and actually ship (Product Hunt) your product and get
         feedback; you are then graduated from the academy.
   cta: Apply Now
-  heading: What you will learn from week to week in the Academy
+  heading: What you will learn week to week in the Academy
   link: 'https://codaisseur.typeform.com/to/njUnCH'
 ---
 
