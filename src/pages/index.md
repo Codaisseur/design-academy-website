@@ -144,6 +144,16 @@ program:
       description: >-
         You will be able to convert data and research into tactile user
         interfaces and able to cooperate on a project with multiple designers
+    - image: /img/visual-design-week.png
+      heading: Visual Design Week
+      description: >-
+        You will learn to design emotional and desirable experience for users;
+        leveraging text, colors, motion, icons and sound.
+    - image: /img/week-of-collaboration-with-coders.png
+      heading: Week of collaboration with coders
+      description: >-
+        You will learn to collaborate with people with another skillset
+        (coders/developers) and based on a specific client/colleague briefing
   cta: Apply Now
   heading: What you will learn in the Academy
   link: 'https://codaisseur.typeform.com/to/njUnCH'
