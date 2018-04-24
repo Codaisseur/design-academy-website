@@ -73,7 +73,7 @@ startdates:
     full: false
     startsAt: 2018-05-28T00:00:00.000Z
 courseinfo:
-  - heading: Admission Fee
+  - heading: Affordable Admission Fee
     subheading: We work hard to make this course affordable to anyone
     description: >
       We work hard to make this course affordable to anyone. The admission fee
