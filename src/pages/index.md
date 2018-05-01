@@ -15,8 +15,8 @@ hero:
 image: /img/hackathon.jpg
 heading: Your Kickstart into a New Design Career
 subheading: >-
-  During the 10 week Academy, you will become a professional in design and
-  product management.
+  At our new 10 week Academy, you will become a professional in research, design
+  and management of digital products and experiences!
 description: >-
   Our teachers have years of startup, corporate and side-project experience in
   everything design and product management. Our unique, hands-on approach to
@@ -104,33 +104,34 @@ courseinfo:
       If you want to know more about the Code Academy, check out the full
       program below.
 jobinfo:
-  - heading: 2-Year Acceleration Program
-    subheading: Codaisseur has your back!
-    description: >
-      Having completed the academy, you will be admitted into our 2-Year Junior
+  - heading: Optional 2-Year Acceleration Program
+    subheading: Continue learning with the Codaisseur community!
+    description: >-
+      Having completed the academy, you can be admitted into our 2-Year Junior
       Acceleration Program. The aim of this program is to provide you with
       further training, support, and mentorship so you can grow and expand your
       current skills in a more expedited manner.
 
 
-      We achieve this through our advanced monthly classes, one-on-one mentoring
-      hours, support via the Codaisseur community and ongoing access to all
-      online course materials. Not only is this a benefit to our graduates, it
-      has proven to be a valuable support outlet for the companies hiring our
-      juniors.
+      We will achieve this through our advanced monthly classes, one-on-one
+      mentoring hours, support via the Codaisseur community and ongoing access
+      to all online course materials. Not only is this a benefit to our
+      graduates, it has proven to be a valuable support outlet for the companies
+      hiring our juniors.
   - heading: Choose Your Own Job in your new career
     subheading: 'Get hired by yourself, or with a developer on your side'
-    description: >
-      It is in our best interest that all (code and design) graduates  find
-      suitable employment as a junior UX professional after the academy; not
-      only do we mean this but our very own model forces us to abide by it.
-      Whilst we provide leads from our ever-growing network of companies, you
-      are more than welcome to solicit directly with a company of their
-      choosing.
+    description: >-
+      It is in our best interest that all (code and design) graduates find
+      suitable employment. You will become a junior UX professional after the
+      academy; working not only in technology companies, but as a valuable asset
+      in any company that works with technology. We mean this, and our very own
+      model forces us to get you hired! We provide leads from our ever-growing
+      network of companies, but you are more than welcome to solicit directly
+      with a company of your choosing.
 
 
-      We involve companies as much as possible throughout the academy to not
-      only introduce but to make the transition easier and more streamlined for
+      We involve and introduce companies as much as possible throughout the
+      academy and after; to make the transition easier and more streamlined for
       our graduates.
 program:
   blurbs:
