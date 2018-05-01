@@ -189,7 +189,7 @@ program:
         employers and actually ship (Product Hunt) your product and get
         feedback; you are then graduated from the academy.
   cta: Apply Now
-  heading: What you will learn week to week in the Academy
+  heading: How we see your week to week schedule
   link: 'https://codaisseur.typeform.com/to/njUnCH'
 ---
 
