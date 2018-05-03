@@ -69,7 +69,7 @@ intro:
     we decided to do the same thing for UX Design.
   link: '#program'
 startdates:
-  - endsAt: 2018-07-03T00:00:00.000Z
+  - endsAt: '2018-08-03'
     full: false
     startsAt: 2018-05-28T00:00:00.000Z
 courseinfo:
