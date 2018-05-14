@@ -70,8 +70,10 @@ intro:
   link: '#program'
 startdates:
   - endsAt: '2018-08-03'
-    full: false
+    full: true
     startsAt: 2018-05-28T00:00:00.000Z
+  - endsAt: '2018-10-12'
+    startsAt: '2018-08-06'
 courseinfo:
   - heading: Affordable Admission Fee
     subheading: We work hard to make this course affordable to anyone
