@@ -71,7 +71,7 @@ intro:
 startdates:
   - endsAt: '2018-08-03'
     full: false
-    startsAt: 2018-05-28T00:00:00.000Z
+    startsAt: '2018-05-28'
   - endsAt: '2018-10-12'
     startsAt: '2018-08-06'
   - endsAt: '2018-12-21'
@@ -163,7 +163,7 @@ program:
       heading: 5. Prototyping and design sprint week
       description: >-
         You will learn to improve the process of working with none technical
-        people on your team and creating a safe space for a creative process 
+        people on your team and creating a safe space for a creative process
     - image: /img/creative-facilitation.png
       heading: 6. Creative Facilitation Week
       description: >-
@@ -197,4 +197,3 @@ program:
   heading: How we see your week to week schedule
   link: 'https://codaisseur.typeform.com/to/njUnCH'
 ---
-
