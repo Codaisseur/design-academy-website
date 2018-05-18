@@ -74,8 +74,6 @@ startdates:
     startsAt: 2018-05-28T00:00:00.000Z
   - endsAt: '2018-10-12'
     startsAt: '2018-08-06'
-  - endsAt: '2018-10-12'
-    startsAt: '2018-08-06'
   - endsAt: '2018-12-21'
     startsAt: '2018-10-15'
 courseinfo:
