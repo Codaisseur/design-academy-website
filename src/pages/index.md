@@ -70,7 +70,7 @@ intro:
   link: '#program'
 startdates:
   - endsAt: '2018-08-03'
-    full: false
+    full: true
     startsAt: '2018-05-28'
   - endsAt: '2018-10-12'
     startsAt: '2018-08-06'
@@ -197,3 +197,4 @@ program:
   heading: How we see your week to week schedule
   link: 'https://codaisseur.typeform.com/to/njUnCH'
 ---
+
