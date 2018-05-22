@@ -24,8 +24,8 @@ const StartDates = ({ title, subtitle, startdates, cta }) => (
             <td className="has-text-centered">
               {
                 startdate.link.match(/^https?:/)
-                ? <a className="button is-primary" href={startdate.link} disabled={startdate.full}>{cta}</a>
-                : <Link className="button is-primary" to={startdate.link} disabled={startdate.full}>{cta}</Link>
+                ? <a className="button is-primary" href={startdate.link} disabled={startdate.full}>{startdate.full ? 'FULL' : cta}</a>
+                : <Link className="button is-primary" to={startdate.link} disabled={startdate.full}>{startdate.full ? 'FULL' : cta}</Link>
               }
             </td>
           </tr>
