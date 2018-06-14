@@ -10,8 +10,8 @@ module.exports = async ({ boundActionCreators }) => {
       .get(`${API_URL}/student_testimonials`)
       .then(res => {
         console.log('Fetched', res.body.student_profiles.length, 'student_testimonials')
-        res.body.student_profiles.filter(t => (t.photo && t.photo.url))
-          .shuffle(res.body.student_profiles)
+        shuffle(res.body.student_profiles)
+          .filter(t => (t.photo && t.photo.url))
           .forEach(testimonial => {
           createNode(
             Object.assign(
