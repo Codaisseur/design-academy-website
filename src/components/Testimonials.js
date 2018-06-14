@@ -10,13 +10,13 @@ const Testimonials = ({ testimonials }) => (
         <div className="message-body columns is-mobile">
           <div className="column is-one-fifth-desktop is-one-quarter-mobile">
             <figure className="image is-square" style={{margin: 0}}>
-              <img src={testimonial.picture_url} alt={testimonial.name} />
+              <img src={testimonial.photo && testimonial.photo.url} alt={`${testimonial.first_name} ${testimonial.last_name}`} />
             </figure>
           </div>
           <div className="column">
             {testimonial.testimonial}
             <br />
-            <cite> – {testimonial.name}</cite>
+            <cite> – {testimonial.first_name} {testimonial.last_name}</cite>
           </div>
         </div>
       </article>

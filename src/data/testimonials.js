@@ -9,8 +9,8 @@ module.exports = async ({ boundActionCreators }) => {
     request
       .get(`${API_URL}/student_testimonials`)
       .then(res => {
-        console.log('Fetched', res.body.student_testimonials.length, 'student_testimonials')
-        shuffle(res.body.student_testimonials).forEach(testimonial => {
+        console.log('Fetched', res.body.student_profiles.length, 'student_testimonials')
+        shuffle(res.body.student_profiles).forEach(testimonial => {
           createNode(
             Object.assign(
               {},

@@ -296,9 +296,11 @@ export const productPageQuery = graphql`
       edges {
         node {
           id
-          name
-          testimonial
-          picture_url
+          first_name
+          last_name
+          photo {
+            url
+          }
         }
       }
     }
