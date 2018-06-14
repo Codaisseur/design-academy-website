@@ -298,6 +298,7 @@ export const productPageQuery = graphql`
           id
           first_name
           last_name
+          testimonial
           photo {
             url
           }
