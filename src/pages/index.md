@@ -12,7 +12,7 @@ hero:
     link: '#program'
     text: |
       Learn modern UX design
-image: /img/hackathon.jpg
+image: /img/bgpostits_designacademy.jpg
 heading: Your Kickstart into a New Design Career
 subheading: >-
   At our new 10 week Academy, you will become a professional in research, design
@@ -63,15 +63,19 @@ intro:
   subheading: >-
     A shared interest in each other and focus on preparing you for a career in
     design.
-  description: >
+  description: >+
     The Design Academy is a new concept of Codaisseur. Since 2016, we have been
     running a very successful [Code Academy](https://codaisseur.com/learn) and
-    we decided to do the same thing for UX Design.
+    we decided to do the same thing for User Experience Design (UX).
+
+
+    UX Design is a skill needed for almost any company and encompasses all
+    aspects of the end-user's interaction with the company, communication, its
+    services, and its products.
+
+
   link: '#program'
 startdates:
-  - endsAt: '2018-08-03'
-    full: true
-    startsAt: '2018-05-28'
   - endsAt: '2018-10-12'
     startsAt: '2018-08-06'
   - endsAt: '2018-12-21'
