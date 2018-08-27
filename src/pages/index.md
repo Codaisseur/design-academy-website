@@ -76,11 +76,14 @@ intro:
 
   link: '#program'
 startdates:
-  - endsAt: '2018-10-12'
-    startsAt: '2018-08-06'
-    full: false
   - endsAt: '2018-12-21'
     startsAt: '2018-10-15'
+    full: false
+  - endsAt: '2019-03-15'
+    startsAt: '2019-01-07'
+    full: false
+  - endsAt: '2019-04-19'
+    startsAt: '2019-02-11'
     full: false
 courseinfo:
   - heading: Affordable Admission Fee
