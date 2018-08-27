@@ -78,8 +78,10 @@ intro:
 startdates:
   - endsAt: '2018-10-12'
     startsAt: '2018-08-06'
+    full: false
   - endsAt: '2018-12-21'
     startsAt: '2018-10-15'
+    full: false
 courseinfo:
   - heading: Affordable Admission Fee
     subheading: We work hard to make this course affordable to anyone
@@ -201,4 +203,3 @@ program:
   heading: How we see your week to week schedule
   link: 'https://codaisseur.typeform.com/to/njUnCH'
 ---
-
