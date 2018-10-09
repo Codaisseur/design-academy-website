@@ -65,26 +65,26 @@ intro:
     design.
   description: >+
     The Design Academy is a new concept of Codaisseur. Since 2016, we have been
-    running a very successful [Code Academy](https://codaisseur.com/learn) and
-    we decided to do the same thing for User Experience Design (UX).
+    running a very successful Code Academy and we decided to do the same thing
+    for digital Design (UX, UI, Visual, Product Management).
 
 
-    UX Design is a skill needed for almost any company and encompasses all
-    aspects of the end-user's interaction with the company, communication, its
-    services, and its products.
+    Design is a skill needed for almost any company and encompasses all aspects
+    of the end-user's interaction with the company, communication, its services,
+    and its products.
 
 
   link: '#program'
 startdates:
   - endsAt: '2018-12-21'
+    full: false
     startsAt: '2018-10-15'
-    full: false
   - endsAt: '2019-03-15'
+    full: false
     startsAt: '2019-01-07'
-    full: false
   - endsAt: '2019-04-19'
-    startsAt: '2019-02-11'
     full: false
+    startsAt: '2019-02-11'
 courseinfo:
   - heading: Affordable Admission Fee
     subheading: We work hard to make this course affordable to anyone
@@ -206,3 +206,4 @@ program:
   heading: How we see your week to week schedule
   link: 'https://codaisseur.typeform.com/to/njUnCH'
 ---
+
