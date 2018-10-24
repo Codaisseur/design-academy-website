@@ -76,9 +76,6 @@ intro:
 
   link: '#program'
 startdates:
-  - endsAt: '2018-12-21'
-    full: false
-    startsAt: '2018-10-15'
   - endsAt: '2019-03-15'
     full: false
     startsAt: '2019-01-07'
