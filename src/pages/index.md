@@ -1,6 +1,6 @@
 ---
 templateKey: product-page
-title: Become a UX Professional in 10 Weeks
+title: Become a Design Professional in 10 Weeks
 hero:
   left:
     cta: Learn Design
@@ -10,8 +10,7 @@ hero:
   right:
     cta: Apply Now
     link: '#program'
-    text: |
-      Learn modern UX design
+    text: Learn modern UX/UI design
 image: /img/bgpostits_designacademy.jpg
 heading: Your Kickstart into a New Design Career
 subheading: >-
