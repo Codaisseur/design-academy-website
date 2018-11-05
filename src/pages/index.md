@@ -78,9 +78,9 @@ startdates:
   - endsAt: '2019-03-15'
     full: false
     startsAt: '2019-01-07'
-  - endsAt: '2019-04-19'
+  - endsAt: '2019-05-24'
     full: false
-    startsAt: '2019-02-11'
+    startsAt: '2019-03-18'
 courseinfo:
   - heading: Affordable Admission Fee
     subheading: We work hard to make this course affordable to anyone
