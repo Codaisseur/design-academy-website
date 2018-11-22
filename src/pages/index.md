@@ -180,7 +180,7 @@ program:
         to push great validated ideas forward in your team and organisation,
         becoming a design leader.
     - image: /img/project-week.png
-      heading: 7. Project week
+      heading: 7. Startup Platform Project week
       description: >-
         By building a product on an existing platform you will learn to work
         with what you've got. You will experience designing and presenting a
