@@ -75,12 +75,16 @@ intro:
 
   link: '#program'
 startdates:
-  - endsAt: '2019-03-15'
+  - endsAt: '2019-04-19'
     full: false
-    startsAt: '2019-01-07'
-  - endsAt: '2019-05-24'
+    startsAt: '2019-02-11'
+  - endsAt: '2019-06-28'
     full: false
-    startsAt: '2019-03-18'
+    startsAt: '2019-04-22'
+  - endsAt: '2019-10-11'
+    startsAt: '2019-08-05'
+  - endsAt: '2019-12-20'
+    startsAt: '2019-10-14'
 courseinfo:
   - heading: Affordable Admission Fee
     subheading: We work hard to make this course affordable to anyone
@@ -153,7 +157,7 @@ program:
       heading: 2. User Interaction Design Week
       description: >-
         You will learn to convert data and research into tactile user interfaces
-        and able to cooperate on a project with multiple designers
+        and able to cooperate on a project with multiple designers.
     - image: /img/visual-design-week.png
       heading: 3. Visual Design Week
       description: >-
@@ -163,29 +167,30 @@ program:
       heading: 4. Week of collaboration with coders
       description: >-
         You will experience collaborating with makers with another skillset
-        (coders/developers) and based on a specific client/colleague briefing
+        (coders/developers) and based on a specific client/colleague briefing.
     - image: /img/prototyping-and-design-sprint.png
-      heading: 5. Prototyping and design sprint week
+      heading: 5. Advanced analysis and Rapid Prototyping week
       description: >-
-        You will learn to improve the process of working with none technical
-        people on your team and creating a safe space for a creative process
+        You will learn to analyse products and services and spot opportunities
+        for optimisation and significant improvements.
     - image: /img/creative-facilitation.png
       heading: 6. Creative Facilitation Week
       description: >-
-        You will learn to to push great validated ideas forward in your team and
-        organisation, becoming a design leader and process coach
+        Not only will you learn how to set up design systems, you will learn to
+        to push great validated ideas forward in your team and organisation,
+        becoming a design leader.
     - image: /img/project-week.png
       heading: 7. Project week
       description: >-
-        You will experience designing and shipping a digital product based on
-        research and a validated prototype; together with developers and a real
-        world problem
+        By building a product on an existing platform you will learn to work
+        with what you've got. You will experience designing and presenting a
+        digital startup; together within a team.
     - image: /img/individual-assignment-week.png
       heading: 8. Individual Assignment week
       description: >-
         You will experience to leverage all your individual skills so you can
         research, design and ship products on your own; this is your graduation
-        product
+        product.
     - image: /img/real-world-project-weeks.png
       heading: 9. Real World Projects
       description: >-
@@ -198,7 +203,7 @@ program:
         The last week you will demo your Real World Project to our partners and
         employers and actually ship (Product Hunt) your product and get
         feedback; you are then graduated from the academy.
-  cta: Apply Now
+  cta: Apply Today
   heading: How we see your week to week schedule
   link: 'https://codaisseur.typeform.com/to/njUnCH'
 ---
