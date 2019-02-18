@@ -1,14 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
 import Link from 'gatsby-link'
 import { MarkdownContent, ContentBlock } from '../components/Content'
 import BigTitle from '../components/BigTitle'
 import Helmet from 'react-helmet'
 import FullMapComponent from '../components/FullMapComponent'
-import StartDates from '../components/StartDates'
 import './product-page.sass'
 
 export const ProductPageTemplate = ({
@@ -19,12 +16,7 @@ export const ProductPageTemplate = ({
   hero,
   description,
   intro,
-  testimonials,
-  partners,
-  startdates,
-  open_evenings,
   courseinfo,
-  jobinfo,
   program,
 }) => (
   <section className="section section--gradient no-padding">
@@ -104,54 +96,6 @@ export const ProductPageTemplate = ({
                   {intro.cta}
                 </a>
               </section>
-              <section style={{margin: '6rem 2rem'}}>
-                <BigTitle content="Our Simple Payment Plan" />
-                <progress style={{margin: '2rem 0 .5rem'}} className="progress is-primary is-large" value="800" max="9920">Admission Fee</progress>
-                <div className="price-labels columns is-mobile" style={{margin: '1rem 0'}}>
-                  <div className="admission-fee-label column is-5">€800 Admission Fee</div>
-                  <div className="tuition-fee-label column has-text-right">€9120 Paid by Your Future Employer</div>
-                </div>
-              </section>
-              <section className="hero is-medium is-dark full-width-image-container"
-                style={{ backgroundImage: `linear-gradient(to top,rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.3) 100%),url(${image})`, marginTop: '6rem'}}>
-                <div className="hero-body has-text-centered">
-                  <div className="container">
-                    <p className="title">
-                      Since 2016, Codaisseur trained over
-                      100 best-in-class graduates
-                      currently working in top
-                      companies and startups in Europe.
-                    </p>
-                    <p className="subtitle">
-                      <a className="button is-primary" href="https://codaisseur.typeform.com/to/njUnCH" style={{ marginTop: '1rem'}}>
-                        Apply Now
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </section>
-              <section style={{margin: '6rem 2rem'}}>
-                <BigTitle content="Our Partners" />
-                <div className="columns is-mobile is-multiline">
-                  {partners.map((p,i) => (
-                    <div key={i} className="column is-one-fifth-desktop is-one-third-mobile is-one-quarter-tablet">
-                      <figure className="image is-square" style={{margin: 0}}>
-                        <a href={`${p.website}?utm_source=Codaisseur&utm_medium=homepage`}>
-                          <img alt={p.name} src={p.logo} />
-                        </a>
-                      </figure>
-                    </div>
-                  ))}
-                </div>
-              </section>
-              <Testimonials testimonials={testimonials} />
-
-              {startdates && <StartDates
-                title="Start Dates"
-                subtitle="During the 10 week course you will learn everything you need to know to become a professional UX designer"
-                cta="Apply Now"
-                startdates={startdates.map(s => Object.assign({}, s, { link: 'https://codaisseur.typeform.com/to/njUnCH' }))} />}
-
               <BigTitle
                 content="Come Visit Us"
                 subtitle="Burgerweeshuispad 201, 1076 GR Amsterdam The Netherlands"
@@ -168,24 +112,6 @@ export const ProductPageTemplate = ({
                     subtitle={info.subheading}
                     content={info.description}
                   />
-                ))}
-              </section>}
-
-              {open_evenings && <StartDates
-                title="Open Evenings"
-                subtitle="It will be the chance to ask all your questions"
-                cta="RSVP"
-                startdates={open_evenings.map(s => ({ startsAt: s.starts_at, link: s.event_url }))} />}
-
-              {jobinfo && <section className="columns is-multiline">
-                {jobinfo.map((info, index) => (
-                  <div key={index} className="column is-6" style={{ flexGrow: 2 }}>
-                    <ContentBlock
-                      title={info.heading}
-                      subtitle={info.subheading}
-                      content={info.description}
-                    />
-                  </div>
                 ))}
               </section>}
 
@@ -238,9 +164,6 @@ ProductPageTemplate.propTypes = {
     cta: PropTypes.string,
     link: PropTypes.string,
   }),
-  testimonials: PropTypes.array,
-  startdates: PropTypes.array,
-  open_evenings: PropTypes.array,
   courseinfo: PropTypes.array,
   jobinfo: PropTypes.array,
 }
@@ -258,12 +181,8 @@ const ProductPage = ({ data }) => {
       description={frontmatter.description}
       intro={frontmatter.intro}
       program={frontmatter.program}
-      startdates={frontmatter.startdates}
       courseinfo={frontmatter.courseinfo}
       jobinfo={frontmatter.jobinfo}
-      partners={data.allPartner.edges.map(p => p.node)}
-      testimonials={data.allStudentTestimonial.edges.map(t => t.node).slice(0,5)}
-      open_evenings={data.allOpenEvening.edges.map(t => t.node)}
       courseinfo={frontmatter.courseinfo}
       jobinfo={frontmatter.jobinfo}
     />
@@ -282,39 +201,6 @@ export default ProductPage
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
-    allPartner {
-      edges {
-        node {
-          id
-          name
-          website
-          logo
-        }
-      }
-    }
-    allStudentTestimonial(limit: 5) {
-      edges {
-        node {
-          id
-          first_name
-          last_name
-          testimonial
-          photo {
-            url
-          }
-        }
-      }
-    }
-    allOpenEvening {
-      edges {
-        node {
-          id
-          starts_at
-          ends_at
-          event_url
-        }
-      }
-    }
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
@@ -345,11 +231,6 @@ export const productPageQuery = graphql`
           description
           cta
           link
-        }
-        startdates {
-          startsAt
-          endsAt
-          full
         }
         courseinfo {
           heading
